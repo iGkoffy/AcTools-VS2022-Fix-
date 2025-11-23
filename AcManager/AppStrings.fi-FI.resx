@@ -1,0 +1,2502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_ContactInformation" xml:space="preserve">
+    <value>Jos sinulla on jotain kysyttävää, uusi idea sovellusta varten tai jos haluat kertoa ongelmasta, ota yhteyttä: [url="https://trello.com/b/MwqpL8Bw/content-manager"]Trello[/url] tai [url="https://trello.com/c/w5xT6ssZ/49-contacts"]jotain muuta[/url].</value>
+  </data>
+  <data name="About_ContactUsHeader" xml:space="preserve">
+    <value>Ota yhteyttä:</value>
+  </data>
+  <data name="About_Copyright" xml:space="preserve">
+    <value>Copyright © 2016 AcClub. Kaikki oikeudet pidätetään.</value>
+  </data>
+  <data name="About_Description" xml:space="preserve">
+    <value>Erityisesti suunniteltu launcheri ja sisällönjärjestelysovellus Assetto Corsaan[url="http://www.assettocorsa.net/"][/url]</value>
+  </data>
+  <data name="About_DeveloperMode" xml:space="preserve">
+    <value>Ota kehittäjätila käyttöön?</value>
+  </data>
+  <data name="About_DeveloperMode_Title" xml:space="preserve">
+    <value>Kehittäjätila</value>
+  </data>
+  <data name="About_Footer" xml:space="preserve">
+    <value>Assetto Corsa Content Managerin mahdollistaa[url="/Pages/About/Credits.xaml|_top"]open source software[/url]!
+Content Manager [url="/Pages/About/License.xaml|_top"]License[/url].</value>
+  </data>
+  <data name="About_MarkAllAsRead" xml:space="preserve">
+    <value>Merkitse kaikki luetuksi</value>
+  </data>
+  <data name="About_MoreInformation" xml:space="preserve">
+    <value>Lisätietoa</value>
+  </data>
+  <data name="About_NewTooltip" xml:space="preserve">
+    <value>Uutta!</value>
+  </data>
+  <data name="About_RecentChanges" xml:space="preserve">
+    <value>Viimeaikaisia muutoksia</value>
+  </data>
+  <data name="About_ReportAnIssue" xml:space="preserve">
+    <value>Kerro ongelmasta</value>
+  </data>
+  <data name="About_ReportAnIssue_CannotSend" xml:space="preserve">
+    <value>Ei voi lähettää lokeja</value>
+  </data>
+  <data name="About_ReportAnIssue_Prompt" xml:space="preserve">
+    <value>Kuvaile ongelmaa. Jätä myös yhteystiedot jos haluat vastauksen (se voi myös auttaa löytämään ratkaisun).</value>
+  </data>
+  <data name="About_ReportAnIssue_Sent" xml:space="preserve">
+    <value>Loki lähetetty</value>
+  </data>
+  <data name="About_ReportAnIssue_Sent_Message" xml:space="preserve">
+    <value>Kiitos avusta!</value>
+  </data>
+  <data name="About_ReportAnIssue_Title" xml:space="preserve">
+    <value>Mikä on ongelma?</value>
+  </data>
+  <data name="About_ThanksForTranslationHeader" xml:space="preserve">
+    <value>Kiitokset käännöksestä:</value>
+  </data>
+  <data name="About_VersionFormat" xml:space="preserve">
+    <value>Versio: {0}</value>
+  </data>
+  <data name="AcError_AvailableSolutions" xml:space="preserve">
+    <value>Saatavilla {Ratkaisu}:</value>
+  <alternative>Saatava {solution}:</alternative></data>
+  <data name="AcError_CannotSolveProblem" xml:space="preserve">
+    <value>Ongelmaa ei voida korjata</value>
+  </data>
+  <data name="AcError_SolutionsNotFound" xml:space="preserve">
+    <value>Mikään ratkaisua ei ole saatavilla.</value>
+  <alternative>Mikään ratkaisu ei ole saatavilla.</alternative></data>
+  <data name="AcError_SolveAllSimilarErrors" xml:space="preserve">
+    <value>Korjaa kaikki samanlaiset virheet</value>
+  </data>
+  <data name="AcObject_AppActivated" xml:space="preserve">
+    <value>Aktiivinen</value>
+  </data>
+  <data name="AcObject_Author_TooltipExt" xml:space="preserve">
+    <value>Jos teet omia modeja, käytä tätä kenttää mieluummin kuin kuvausta tai nimeä.</value>
+  <alternative>Jos teet omia modejasi, käytä tätä kenttää mieluummin kuin kuvausta tai nimeä.</alternative></data>
+  <data name="AcObject_ChangeId_Tooltip" xml:space="preserve">
+    <value>Olethan varovainen, tunnuksen muuttaminen voi johtaa ongelmiin onlinessa!</value>
+  <alternative>En ændring af ID'et vil muligvis skabe online-problemer!</alternative></data>
+  <data name="AcObject_CityLabel" xml:space="preserve">
+    <value>Kaupunki:</value>
+  <alternative>By:</alternative></data>
+  <data name="AcObject_Cloning" xml:space="preserve">
+    <value>Kloonataan...</value>
+  <alternative>Kloner...</alternative></data>
+  <data name="AcObject_DateLabel" xml:space="preserve">
+    <value>Päivämäärä:</value>
+  <alternative>Dato:</alternative></data>
+  <data name="AcObject_DriverLabel" xml:space="preserve">
+    <value>Kuljettaja:</value>
+  <alternative>Kører:</alternative></data>
+  <data name="AcObject_DriverNameLabel" xml:space="preserve">
+    <value>Kuljettajan nimi:</value>
+  <alternative>Kørernavn:</alternative></data>
+  <data name="AcObject_EnterNewId" xml:space="preserve">
+    <value>Anna uusi tunnus:</value>
+  <alternative>Skriv nyt ID:</alternative></data>
+  <data name="AcObject_FontLastScannedFormat" xml:space="preserve">
+    <value>Viimeksi tarkistettu: {0}</value>
+  <alternative>Sidst skannet: {0}</alternative></data>
+  <data name="AcObject_FontLastScannedNever" xml:space="preserve">
+    <value>Viimeksi tarkistettu: Ei koskaan</value>
+  <alternative>Sidst skannet: N/A</alternative></data>
+  <data name="AcObject_FontUsedInLabel" xml:space="preserve">
+    <value>Käytössä:</value>
+  <alternative>Brugt i:</alternative></data>
+  <data name="AcObject_GeoTagsLabel" xml:space="preserve">
+    <value>Geo-avainsanat:</value>
+  <alternative>Geo Tags:</alternative></data>
+  <data name="AcObject_NumberLabel" xml:space="preserve">
+    <value>Numero:</value>
+  <alternative>Nummer:</alternative></data>
+  <data name="AcObject_PriorityLabel" xml:space="preserve">
+    <value>Tärkeys:</value>
+  <alternative>Prioritet:</alternative></data>
+  <data name="AcObject_SizeLabel" xml:space="preserve">
+    <value>Koko:</value>
+  <alternative>Styrke:</alternative></data>
+  <data name="AcObject_TeamLabel" xml:space="preserve">
+    <value>Talli:</value>
+  <alternative>Hold:</alternative></data>
+  <data name="AcObject_TrackLabel" xml:space="preserve">
+    <value>Rata:</value>
+  <alternative>Sted:</alternative></data>
+  <data name="AcObject_TrackLayoutNameLabel" xml:space="preserve">
+    <value>Pohja:</value>
+  <alternative>Layout:</alternative></data>
+  <data name="AcObject_Url_TooltipExt" xml:space="preserve">
+    <value>Modaaja, käytä tätä kenttää jos sinulla on nettisivuillasi lisätietoja muutoksista </value>
+  <alternative>Brug venligst dette felt hvis du er en modder med en hjemmeside som indeholder mere information om dette objekt.</alternative></data>
+  <data name="AcObject_UsingsRescan" xml:space="preserve">
+    <value>Tarkista uudelleen</value>
+  <alternative>Scan</alternative></data>
+  <data name="AcObject_Version_TooltipExt" xml:space="preserve">
+    <value>Voidaan käyttää automaattiseen päivittämiseen</value>
+  <alternative>Dette vil kunne bruges til auto-opdatering</alternative></data>
+  <data name="AcObject_WeatherLabel" xml:space="preserve">
+    <value>Säätila:</value>
+  <alternative>Vejr:</alternative></data>
+  <data name="AcObject_WeatherUseAsLabel" xml:space="preserve">
+    <value>Käytä:</value>
+  <alternative>Brug som:</alternative></data>
+  <data name="AcRoot_FolderIsUnacceptable" xml:space="preserve">
+    <value>Kansiota ei voida hyväksyä</value>
+  <alternative>Mappen er ikke gyldig.</alternative></data>
+  <data name="AcRoot_Prompt" xml:space="preserve">
+    <value>Assetto Corsan päähakemisto:</value>
+  <alternative>Grundmappen til Assetto Corsa:</alternative></data>
+  <data name="AcRoot_SteamId_Prompt" xml:space="preserve">
+    <value>Steam tunnus:</value>
+  <alternative>Steam ID:</alternative></data>
+  <data name="AcRoot_Welcome" xml:space="preserve">
+    <value>Tervetuloa Assetto Corsa Content Manageriin! Enää muutama asia määrittämättä:</value>
+  <alternative>Velkommen til Assetto Corsa Content Manager! Før vi begynder er der nogle ting, som du skal:</alternative></data>
+  <data name="AcSettings_Apps_ActivatedLabel" xml:space="preserve">
+    <value>Aktiiviset ohjelmat:</value>
+  <alternative>Aktive apps:</alternative></data>
+  <data name="AcSettings_Apps_FormsLabel" xml:space="preserve">
+    <value>Muodot:</value>
+  <alternative>Formularer:</alternative></data>
+  <data name="AcSettings_Audio" xml:space="preserve">
+    <value>Äänet</value>
+  <alternative>Lyd</alternative></data>
+  <data name="AcSettings_Audio_LatencyLabel" xml:space="preserve">
+    <value>Viive:</value>
+  <alternative>Forsinkelse:</alternative></data>
+  <data name="AcSettings_Audio_LatencyLabel_Tooltip" xml:space="preserve">
+    <value>Jos koet ongelmia äänen kanssa, vaihda Matala tai Normaali</value>
+  <alternative>Hvis du oplever problemer med lydkvalitet, prøv da at skrue ned for denne indstilling.</alternative></data>
+  <data name="AcSettings_Audio_LevelsHeader" xml:space="preserve">
+    <value>Tasot:</value>
+  <alternative>Niveauer</alternative></data>
+  <data name="AcSettings_Audio_Opponents" xml:space="preserve">
+    <value>Vastustajat</value>
+  <alternative>Modstandere</alternative></data>
+  <data name="AcSettings_Audio_Surface" xml:space="preserve">
+    <value>Pinta</value>
+  <alternative>Overflade</alternative></data>
+  <data name="AcSettings_Audio_Tyres" xml:space="preserve">
+    <value>Renkaat:</value>
+  <alternative>Dæk</alternative></data>
+  <data name="AcSettings_Audio_TyresOffset" xml:space="preserve">
+    <value>Renkaiden offset</value>
+  <alternative>Dæk offset</alternative></data>
+  <data name="AcSettings_Audio_Wind" xml:space="preserve">
+    <value>Tuuli</value>
+  <alternative>Vind</alternative></data>
+  <data name="AcSettings_Controls" xml:space="preserve">
+    <value>Näppäinkomennot</value>
+  <alternative>Styring</alternative></data>
+  <data name="AcSettings_DefaultValue" xml:space="preserve">
+    <value>Vakio arvo:</value>
+  <alternative>Standardværdi:</alternative></data>
+  <data name="AcSettings_Exposure_Value" xml:space="preserve">
+    <value>Arvo</value>
+  <alternative>Værdi</alternative></data>
+  <data name="AcSettings_FieldOfView_Tooltip" xml:space="preserve">
+    <value>Näkökentän laajuus, jonka kamera esittää</value>
+  <alternative>Dette er omfanget af verdenen, som kan ses af kameraet.</alternative></data>
+  <data name="AcSettings_GhostCar" xml:space="preserve">
+    <value>Haamuauto:</value>
+  <alternative>Ghost car</alternative></data>
+  <data name="AcSettings_GhostCar_MaxOpacityAt" xml:space="preserve">
+    <value>Maksimi läpinäkuultavuus</value>
+  <alternative>Fuld gennemsigtighed ved</alternative></data>
+  <data name="AcSettings_GhostCar_Opacity" xml:space="preserve">
+    <value>Läpinäkyvyys</value>
+  <alternative>Gennemsigtighed</alternative></data>
+  <data name="AcSettings_GhostCar_RecordingLimit" xml:space="preserve">
+    <value>Tallennusraja</value>
+  <alternative>Optagebegrænsning</alternative></data>
+  <data name="AcSettings_GhostCar_StartShowingAt" xml:space="preserve">
+    <value>Näytä kun</value>
+  <alternative>Minimum fade distance</alternative></data>
+  <data name="AcSettings_Mirrors" xml:space="preserve">
+    <value>Peilit:</value>
+  <alternative>Spejle</alternative></data>
+  <data name="AcSettings_Mirrors_RenderingDistance" xml:space="preserve">
+    <value>Hahmotusetäisyys</value>
+  <alternative>Renderingsdistance</alternative></data>
+  <data name="AcSettings_Miscellaneous" xml:space="preserve">
+    <value>Monitahoinen</value>
+  <alternative>Blandet</alternative></data>
+  <data name="AcSettings_ProximityIndicator" xml:space="preserve">
+    <value>Etäisyysilmaisin:</value>
+  <alternative>Proximity indicator</alternative></data>
+  <data name="AcSettings_ProximityIndicator_ShowNearestOpponents" xml:space="preserve">
+    <value>Näytä lähimmät</value>
+  <alternative>Show closest opponents</alternative></data>
+  <data name="AcSettings_Skidmarks" xml:space="preserve">
+    <value>Renkaanjäljet:</value>
+  <alternative>Skidmarks</alternative></data>
+  <data name="AcSettings_Skidmarks_Quantity" xml:space="preserve">
+    <value>Määrä</value>
+  <alternative>Amount</alternative></data>
+  <data name="AcSettings_System_FreeCamera_Tooltip" xml:space="preserve">
+    <value>Antaa liikkua vapaasti kartalla. Paina F7 aktivoidaksesi.</value>
+  <alternative>Allows you to freely move around the map. To activate, press F7.</alternative></data>
+  <data name="AcSettings_System_ScreenshotsFormatLabel" xml:space="preserve">
+    <value>Näyttökuvan muoto:</value>
+  <alternative>Screemshots format:</alternative></data>
+  <data name="AcSettings_System_ScreenshotsQuality" xml:space="preserve">
+    <value>Vaihda kuvamuoto BMP:ksi, asenna Magick.NET -liitännäinen ja älä unohda sallia automaattista muuntoa Asetukset/Aja -kohdassa.</value>
+  <alternative>Install the Magick.NET plugin and switch the .bmp. Don't forget to enable automatic conversions in the Settings/Drive page.</alternative></data>
+  <data name="AcSettings_System_ScreenshotsQuality_Title" xml:space="preserve">
+    <value>Haluatko käyttää parasta mahdollista laatua?</value>
+  <alternative>Do you wish to use the best screenshot quality?</alternative></data>
+  <data name="AcSettings_Video_AllowDirectX10" xml:space="preserve">
+    <value>Käytä ei tuettua DirectX 10 (Kokeellinen; käytä omalla riskillä)</value>
+  <alternative>Allow unsupported DirectX 10 (Highly experimental feature; use at your own risk)</alternative></data>
+  <data name="AcSettings_Video_AntiAliasingLabel" xml:space="preserve">
+    <value>Moninäytteinen reunanpehmennys (MSAA):</value>
+  <alternative>Anti-aliasing:</alternative></data>
+  <data name="AcSettings_Video_Benchmark_Tooltip" xml:space="preserve">
+    <value>Aloita suorituskykytesti (Ctrl+G)</value>
+  <alternative>Test your game's settings here (Ctrl+G)</alternative></data>
+  <data name="AcSettings_Video_CrepuscularRays" xml:space="preserve">
+    <value>Auringonsäteet</value>
+  <alternative>Creupscular rays</alternative></data>
+  <data name="AcSettings_Video_DepthOfFieldLabel" xml:space="preserve">
+    <value>Näkökentän syvyys:</value>
+  <alternative>Depth of Field</alternative></data>
+  <data name="AcSettings_Video_FixResolutionAutomatically" xml:space="preserve">
+    <value>Korjaa resoluutio automaattisesti</value>
+  <alternative>Automatically find correct resolution</alternative></data>
+  <data name="AcSettings_Video_Framerate" xml:space="preserve">
+    <value>Ruudunpäivitys (FPS)</value>
+  <alternative>Framerate (FPS)</alternative></data>
+  <data name="AcSettings_Video_LimitFramerate" xml:space="preserve">
+    <value>Rajoita ruudunpäivitystä (FPS)</value>
+  <alternative>Limit framerate (FPS)</alternative></data>
+  <data name="AcSettings_Video_MaximumFrameLatency" xml:space="preserve">
+    <value>Maksimi ruutuviive</value>
+  <alternative>Maximum frame latency</alternative></data>
+  <data name="AcSettings_Video_MaximumFrameLatency_Tooltip" xml:space="preserve">
+    <value>Maksimi ruutuviive; näytönohjaimen määrittämä</value>
+  <alternative>Maximum frame latency; defined by video card settings</alternative></data>
+  <data name="AcSettings_Video_MipLodBias_Tooltip" xml:space="preserve">
+    <value>Aseta arvo (kuten; -1) terävöittääksesi kuvaa</value>
+  <alternative>Set an integer value to sharpen the image.</alternative></data>
+  <data name="AcSettings_Video_OculusHeader" xml:space="preserve">
+    <value>Oculus Rift:</value>
+  </data>
+  <data name="AcSettings_Video_PostProcessingHeader" xml:space="preserve">
+    <value>Jälkikäsittely:</value>
+  <alternative>Post-processing:</alternative></data>
+  <data name="AcSettings_Video_ShadowResolutionLabel" xml:space="preserve">
+    <value>Varjojen resoluutio:</value>
+  <alternative>Shadow resolution:</alternative></data>
+  <data name="AcSettings_Video_SkyboxReflection_Tooltip" xml:space="preserve">
+    <value>Mitä korkeampi arvo, sen heijastavampi taustataivas.</value>
+  <alternative>The higher the value, the more reflective the skybox becomes.</alternative></data>
+  <data name="AcSettings_Video_VerticalSyncronization" xml:space="preserve">
+    <value>Pystytahdistus (V-sync)</value>
+  <alternative>V-sync</alternative></data>
+  <data name="AcSettings_Video_WorldDetalLabel" xml:space="preserve">
+    <value>Maailman laaduntaso:</value>
+  <alternative>World detail:</alternative></data>
+  <data name="AcSettings_ViewAndUi" xml:space="preserve">
+    <value>Näkymä ja käyttöliittymä</value>
+  <alternative>View and UI</alternative></data>
+  <data name="AdditionalContent_CannotInstall" xml:space="preserve">
+    <value>Sisällön asennus ei onnistu tiedostosta</value>
+  <alternative>Unable to install content from the file</alternative></data>
+  <data name="AdditionalContent_CannotInstallFormat" xml:space="preserve">
+    <value>Ei voida asentaa {0}</value>
+  <alternative>Unable to install the {0}</alternative></data>
+  <data name="AdditionalContent_CannotUnpack" xml:space="preserve">
+    <value>Ei voida purkaa</value>
+  <alternative>Unable to unpack</alternative></data>
+  <data name="AdditionalContent_CannotUnpack_Commentary" xml:space="preserve">
+    <value>Arkisto mitä luultavimmin korruptoitunut, vain luku-tilassa, tai salausavain ei ole oikea.</value>
+  <alternative>The archive is most likely corrupted, read-only, or matched with an invalid password.</alternative></data>
+  <data name="AdditionalContent_InputPassword_InvalidPrompt" xml:space="preserve">
+    <value>Salasana oli väärä, kokeile uudelleen:</value>
+  <alternative>That password was invalid</alternative></data>
+  <data name="AdditionalContent_InputPassword_Prompt" xml:space="preserve">
+    <value>Salattu arkisto. Laita salausavain:</value>
+  <alternative>This archive is encrypted; insert the password:</alternative></data>
+  <data name="AdditionalContent_InputPassword_Title" xml:space="preserve">
+    <value>Salasana vaaditaan</value>
+  <alternative>The password is required!</alternative></data>
+  <data name="AdditionalContent_Installing" xml:space="preserve">
+    <value>Asentaa {0}…</value>
+  <alternative>Installing the {0}…</alternative></data>
+  <data name="AdditionalContent_NothingFound" xml:space="preserve">
+    <value>Tyhjä arkisto</value>
+  <alternative>The archive is empty</alternative></data>
+  <data name="AdditionalContent_PasswordIsInvalid" xml:space="preserve">
+    <value>Väärä salasana</value>
+  <alternative>Invalid password</alternative></data>
+  <data name="AdditionalContent_Title" xml:space="preserve">
+    <value>Asenna lisäsisältö</value>
+  <alternative>Install additional content</alternative></data>
+  <data name="App_AppUpdated" xml:space="preserve">
+    <value>Content Manager päivitetty!</value>
+  <alternative>The Content Manager has been updated!</alternative></data>
+  <data name="App_AppUpdated_Details" xml:space="preserve">
+    <value>Paina tästä nähdäksesi mikä on muuttunut</value>
+  <alternative>Click to see the recent changes</alternative></data>
+  <data name="App_DataUpdated" xml:space="preserve">
+    <value>Tietosi päivitettiin!</value>
+  <alternative>Your data has been updated</alternative></data>
+  <data name="App_LocaleUpdated" xml:space="preserve">
+    <value>Lokaatio päivitetty!</value>
+  <alternative>The locale has been updated updated!</alternative></data>
+  <data name="App_LocaleUpdated_Details" xml:space="preserve">
+    <value>Käynnistä sovellus uudelleen, nähdäksesi muutokset</value>
+  <alternative>Please restart the app to see changes</alternative></data>
+  <data name="App_NewVersion" xml:space="preserve">
+    <value>Uusi versio!</value>
+  <alternative>New Version</alternative></data>
+  <data name="AppKey_AppWillBeRestarted" xml:space="preserve">
+    <value>Sovellus uudelleenkäynnistetään</value>
+  <alternative>The app will be restarted.</alternative></data>
+  <data name="AppKey_CannotCheck" xml:space="preserve">
+    <value>Avainta ei voitu todentaa!</value>
+  <alternative>Unable to check the key</alternative></data>
+  <data name="AppKey_GetNewKey" xml:space="preserve">
+    <value>Hanki uusi avain!</value>
+  <alternative>Get a new key!</alternative></data>
+  <data name="AppKey_InvalidKey" xml:space="preserve">
+    <value>Avain ei kelpaa.</value>
+  <alternative>That key is invalid.</alternative></data>
+  <data name="AppKey_KeyRevoked_Message" xml:space="preserve">
+    <value>Anteeksi, mutta avaimesi on tehty toimimattomaksi ja se piti kumota. Haluaisitko ottaa yhteyttä ja tilata uuden?</value>
+  <alternative>Sorry, but your key was compromised and had to be deleted. Would you like to contact us for another one?</alternative></data>
+  <data name="AppKey_KeyRevoked_Title" xml:space="preserve">
+    <value>Avain kumottu!</value>
+  <alternative>The key has been deleted!</alternative></data>
+  <data name="AppKey_KeyWasRevoked" xml:space="preserve">
+    <value>Avain on kumottu!</value>
+  <alternative>The key was deleted.</alternative></data>
+  <data name="AppKey_PreRestart_Message" xml:space="preserve">
+    <value>Sovellus uudelleenkäynnistyy. Kiitos tuestasi!
+
+[i]ÄLÄ IKINÄ jaa avaintasi! Se saattaa johtaa sen kumoamiseen![/i]</value>
+  <alternative>The app will now restart. Thanks for the support!
+
+[i]DO NOT share your key! It may get compromised![/i]</alternative></data>
+  <data name="AppKey_Prompt" xml:space="preserve">
+    <value>Laita avaimesi, avataksesi kaikki ominaisuudet (XXXX-XXXX-...):</value>
+  <alternative>Enter the app key to unlock more features (XXXX-XXXX-...):</alternative></data>
+  <data name="AppKey_Tooltip" xml:space="preserve">
+    <value>Älä jaa avaintasi kenellekään; se saatetaan poistaa!</value>
+  <alternative>Do not share this key with anyone; it might get deleted!</alternative></data>
+  <data name="Arguments_CannotInstallAdditionalContent" xml:space="preserve">
+    <value>Lisäosien asennus ei onnistu!</value>
+  <alternative>Unable to install the addons.</alternative></data>
+  <data name="Arguments_CannotInstallCarSetup" xml:space="preserve">
+    <value>Auton säätöjen asentaminen ei onnistu!</value>
+  <alternative>Unable to install the setup.</alternative></data>
+  <data name="Arguments_CannotInstallSetup_Commentary" xml:space="preserve">
+    <value>RSR on muuttunut.</value>
+  <alternative>The RSR had changed.</alternative></data>
+  <data name="Arguments_CannotInstallSetup_CommentaryFormat" xml:space="preserve">
+    <value>RSR palautti tiedoston epätuettuun muotoon.</value>
+  <alternative>The RSR had returned the file in an unsupported format.</alternative></data>
+  <data name="Arguments_CannotParseRequest" xml:space="preserve">
+    <value>Pyynnön jäsennys epäonnistui.</value>
+  <alternative>Unable to parse request.</alternative></data>
+  <data name="Arguments_CannotProcessRequest" xml:space="preserve">
+    <value>Pyynnön käsittely epäonnistui.</value>
+  <alternative>Unable to process request.</alternative></data>
+  <data name="Arguments_CannotProcessRequest_Commentary" xml:space="preserve">
+    <value>Varmista, että tiedot ovat paikkaansapitäviä.</value>
+  <alternative>Please make sure the data is valid.</alternative></data>
+  <data name="Arguments_CannotStartRace_Commentary" xml:space="preserve">
+    <value>Varmista, että vaadittavat autot ja radat ovat asennettu sekä valittuna.</value>
+  <alternative>Make sure the required cars and tracks are installed and enabled.</alternative></data>
+  <data name="Arguments_MetadataIsMissing" xml:space="preserve">
+    <value>Puuttuva metatieto!</value>
+  <alternative>The metadata is missing!</alternative></data>
+  <data name="Arguments_SaveAsGeneric" xml:space="preserve">
+    <value>Tallenna oletuksena</value>
+  <alternative>Save as default</alternative></data>
+  <data name="Arguments_Shared_ApplyAndSave" xml:space="preserve">
+    <value>Käytä &amp; Tallenna</value>
+  <alternative>Apply &amp; Save</alternative></data>
+  <data name="Arguments_Shared_ApplyFfbOnly" xml:space="preserve">
+    <value>Käytä (Vain FFB)</value>
+  <alternative>Apply (FFB Only)</alternative></data>
+  <data name="Arguments_Shared_ApplyOnly" xml:space="preserve">
+    <value>Käytä vain</value>
+  <alternative>Apply Only</alternative></data>
+  <data name="Arguments_Shared_JustGo" xml:space="preserve">
+    <value>Anna mennä!</value>
+  <alternative>Just Go</alternative></data>
+  <data name="Arguments_Shared_SaveAndApply" xml:space="preserve">
+    <value>Tallenna &amp; Käytä</value>
+  <alternative>Save &amp; Apply</alternative></data>
+  <data name="Arguments_Shared_SaveOnly" xml:space="preserve">
+    <value>Vain tallennus</value>
+  <alternative>Save Only</alternative></data>
+  <data name="Arguments_Shared_ShouldApplyOrSave" xml:space="preserve">
+    <value>Haluatko käyttää kyseistä asetusta, tai tallentaa sen?</value>
+  <alternative>Would you like to apply this preset, or save it for later?</alternative></data>
+  <data name="Arguments_SharedUnsupported" xml:space="preserve">
+    <value>Tiedostomuotoa ei tueta: “{0}”</value>
+  <alternative>Unsupported file type: “{0}”</alternative></data>
+  <data name="BrandBadge_SelectNew" xml:space="preserve">
+    <value>Valitse uusi merkin tunnus</value>
+  <alternative>Select New Brand’s Badge</alternative></data>
+  <data name="BrandBadge_Title" xml:space="preserve">
+    <value>Merkin tunnus</value>
+  <alternative>Brand Badge</alternative></data>
+  <data name="Car_DeleteSkin" xml:space="preserve">
+    <value>Poista Skini</value>
+  <alternative>Delete Skin</alternative></data>
+  <data name="CarParent_Title" xml:space="preserve">
+    <value>Valitse emomalli</value>
+  <alternative>Select Parent</alternative></data>
+  <data name="CarPreviews_CameraPositionLabel" xml:space="preserve">
+    <value>Kameran paikka:</value>
+  <alternative>Camera Position:</alternative></data>
+  <data name="CarPreviews_DisableSweetFx_Tooltip" xml:space="preserve">
+    <value>SweetFx:n poistaminen ei näennäisesti vaikuta tulokseen, mutta voi lyhentää latausaikoja</value>
+  <alternative>Apparantly SweetFx doesn't affect the result, but could decrease loading time</alternative></data>
+  <data name="CarPreviews_LookAtLabel" xml:space="preserve">
+    <value>Katso:</value>
+  <alternative>Look At:</alternative></data>
+  <data name="CarPreviews_ShotIn4k" xml:space="preserve">
+    <value>Kuvattu: 3840×2161</value>
+  <alternative>Shot in 3840×2161</alternative></data>
+  <data name="CarPreviews_ShowroomIsMissing_Title" xml:space="preserve">
+    <value>Näyttelytila puuttuu</value>
+  <alternative>Showroom Is Missing</alternative></data>
+  <data name="CarPreviews_Title" xml:space="preserve">
+    <value>Päivitä esikatselut</value>
+  <alternative>Update Previews</alternative></data>
+  <data name="CarSpecs_Acceleration_FormatTooltip" xml:space="preserve">
+    <value>… s 0-100</value>
+  <alternative>…s 0-101</alternative></data>
+  <data name="CarSpecs_CopyNewPowerAndTorque" xml:space="preserve">
+    <value>Kopioi uudet arvot Väännölle ja Hevosvoimille?</value>
+  <alternative>Copy new values to Torque and BHP?</alternative></data>
+  <data name="CarSpecs_FixFormat" xml:space="preserve">
+    <value>Korjaa muoto</value>
+  <alternative>Fix Format</alternative></data>
+  <data name="CarSpecs_FixFormats" xml:space="preserve">
+    <value>Korjaa muodot</value>
+  <alternative>Fix Formats</alternative></data>
+  <data name="CarSpecs_MaxSpeedLabel" xml:space="preserve">
+    <value>Huippunopeus:</value>
+  <alternative>Max Speed:</alternative></data>
+  <data name="CarSpecs_Power_FormatTooltip" xml:space="preserve">
+    <value>…bhp</value>
+  </data>
+  <data name="CarSpecs_PwRatio_FormatTooltip" xml:space="preserve">
+    <value>…kg/hp</value>
+  </data>
+  <data name="CarSpecs_PwRatioLabel" xml:space="preserve">
+    <value>Teho-painosuhde:</value>
+  <alternative>P/W Ratio:</alternative></data>
+  <data name="CarSpecs_RecalculateCurvesUsingDataAndPowerTorqueHeader" xml:space="preserve">
+    <value>Uudelleenlaske käyrät käyttäen Tieto &amp; Teho/Vääntö -arvoja</value>
+  <alternative>Recalculate Curves Using Data &amp; Power/Torque Values</alternative></data>
+  <data name="CarSpecs_RecalculateCurvesUsingDataOnlyHeader" xml:space="preserve">
+    <value>Uudelleenlaske käyrät käyttäen vain tietoja</value>
+  <alternative>Recalculate Curves Using Data Only</alternative></data>
+  <data name="CarSpecs_ScaleCurvesToPowerTorqueHeader" xml:space="preserve">
+    <value>Skaalaa käyrät Teho/Vääntö -arvoihin</value>
+  <alternative>Scale Curves To Power/Torque Values</alternative></data>
+  <data name="CarSpecs_SetPowerCurve" xml:space="preserve">
+    <value>Aseta tehokäyrä</value>
+  <alternative>Set Power Curve</alternative></data>
+  <data name="CarSpecs_Title" xml:space="preserve">
+    <value>{0} Määritelmät</value>
+  <alternative>{0} Specifications</alternative></data>
+  <data name="CarSpecs_Torque_FormatTooltip" xml:space="preserve">
+    <value>…Nm</value>
+  </data>
+  <data name="CarSpecs_TransmissionLossTitle" xml:space="preserve">
+    <value>Voimansiirron tehohäviö {0}</value>
+  <alternative>Transmission Loss For {0}</alternative></data>
+  <data name="CarSpecs_UpdateCurves" xml:space="preserve">
+    <value>Päivitä käyrät</value>
+  <alternative>Update Curves</alternative></data>
+  <data name="CarSpecs_Weight_FormatTooltip" xml:space="preserve">
+    <value>…kg</value>
+  </data>
+  <data name="Changelog_RecentChanges_Title" xml:space="preserve">
+    <value>Viimeiset muutokset</value>
+  <alternative>Recent Changes</alternative></data>
+  <data name="Common_AddToLibrary" xml:space="preserve">
+    <value>Lisää kirjastoon?</value>
+  <alternative>Add To The Library?</alternative></data>
+  <data name="Common_Go_RaceTooltip" xml:space="preserve">
+    <value>Aloita kisa (Ctrl+G)</value>
+  <alternative>Start Race (Ctrl+G)</alternative></data>
+  <data name="Common_GotId" xml:space="preserve">
+    <value>Ymmärsin</value>
+  <alternative>Got It</alternative></data>
+  <data name="Common_NewBrandName" xml:space="preserve">
+    <value>Uusi valmistajan nimi</value>
+  <alternative>New Brand Name</alternative></data>
+  <data name="Common_NewName" xml:space="preserve">
+    <value>Uusi nimi</value>
+  <alternative>New Name</alternative></data>
+  <data name="Common_OneMoreThing" xml:space="preserve">
+    <value>Vielä yksi asia</value>
+  <alternative>One More Thing</alternative></data>
+  <data name="Common_SelectFile" xml:space="preserve">
+    <value>Valitse tiedosto</value>
+  <alternative>Select File</alternative></data>
+  <data name="Common_SelectImageForPreview" xml:space="preserve">
+    <value>Valitse esikatselun kuva</value>
+  <alternative>Select Image For Preview</alternative></data>
+  <data name="Common_Share" xml:space="preserve">
+    <value>Jaa</value>
+  <alternative>Share</alternative></data>
+  <data name="Common_SignIn" xml:space="preserve">
+    <value>Kirjaudu sisään</value>
+  <alternative>Sign In</alternative></data>
+  <data name="Common_SignOut" xml:space="preserve">
+    <value>Kirjudu ulos</value>
+  <alternative>Sign Out</alternative></data>
+  <data name="Common_ViewUserFolder" xml:space="preserve">
+    <value>Näytä käyttäjäkansio</value>
+  <alternative>View User Folder</alternative></data>
+  <data name="Controls_ApplyToAll" xml:space="preserve">
+    <value>Ei, käytä kaikkiin</value>
+  <alternative>No, Apply to All</alternative></data>
+  <data name="Controls_DetectedControllersHeader" xml:space="preserve">
+    <value>Havaitut ohjaimet:</value>
+  <alternative>Detected controllers:</alternative></data>
+  <data name="Controls_ForceFeedback" xml:space="preserve">
+    <value>Force Feedback</value>
+  </data>
+  <data name="Controls_RemoveOld" xml:space="preserve">
+    <value>Kyllä, poista vanha</value>
+  <alternative>Yes, Remove Old</alternative></data>
+  <data name="Controls_SharedFfbOnly" xml:space="preserve">
+    <value>{0} (Vain FFB)</value>
+  <alternative>{0} (FFB Only)</alternative></data>
+  <data name="Controls_ShareFfbOnly" xml:space="preserve">
+    <value>Jaa vain FFB asetukset</value>
+  <alternative>Share FFB Settings Only</alternative></data>
+  <data name="Controls_SharePreset" xml:space="preserve">
+    <value>Jaa esiasetus</value>
+  <alternative>Share Preset</alternative></data>
+  <data name="Controls_SwapUsings" xml:space="preserve">
+    <value>Vaihda käytetyt komennot</value>
+  <alternative>Swap Usings</alternative></data>
+  <data name="Controls_WarnAboutUnsaved" xml:space="preserve">
+    <value>Varoita tallentamattomista muutoksista</value>
+  <alternative>Warn About Unsaved Changes</alternative></data>
+  <data name="CreateShowroom_CannotCreate" xml:space="preserve">
+    <value>Ei voi luoda uutta näyttelytilaa</value>
+  <alternative>Can't create new showroom</alternative></data>
+  <data name="CreateShowroom_InShadow" xml:space="preserve">
+    <value>Varjossa</value>
+  <alternative>In Shadow</alternative></data>
+  <data name="CreateShowroom_Panorama_Commentary" xml:space="preserve">
+    <value>Suositeltu muoto: DDS kuva, 32f.32f.32f.32f, 5120×2560
+Mutta jos et halua tuhlata 200mb: TIFF kuva, 96 bittiä pikseliä kohden, ZIP</value>
+  <alternative>Recommended format: DDS Image, 32f.32f.32f.32f, 5120×2560
+But if you don't want to waste 200 MB: TIFF Image, 96 bit per pixel, ZIP</alternative></data>
+  <data name="CreateShowroom_SelectPanorama_Title" xml:space="preserve">
+    <value>Valitse panoraama tiedosto</value>
+  <alternative>Select a Panorama File</alternative></data>
+  <data name="CreateShowroom_Title" xml:space="preserve">
+    <value>Tee uusi näyttelytila</value>
+  <alternative>Create New Showroom</alternative></data>
+  <data name="CropImage_Skip" xml:space="preserve">
+    <value>Älä leikkaa</value>
+  <alternative>Don’t Crop</alternative></data>
+  <data name="CropImage_Title" xml:space="preserve">
+    <value>Leikkaa kuva</value>
+  <alternative>Crop Image</alternative></data>
+  <data name="Dialog_CarSetupsFormat" xml:space="preserve">
+    <value>{0} Asetukset</value>
+  <alternative>{0} Setups</alternative></data>
+  <data name="Dialog_CarSkinsFormat" xml:space="preserve">
+    <value>{0} Skinit</value>
+  <alternative>{0} Skins</alternative></data>
+  <data name="Drive_AiLevelInDriverName" xml:space="preserve">
+    <value>Näytä tekoälyn taso kuljettajan nimessä</value>
+  <alternative>Show AI Level In Driver’s Name</alternative></data>
+  <data name="Drive_CannotStart_Title" xml:space="preserve">
+    <value>Kisaa ei voida aloittaa</value>
+  <alternative>Can’t Start Race</alternative></data>
+  <data name="Drive_ConsiderTimezones" xml:space="preserve">
+    <value>Ota huomioon aikavyöhykkeet</value>
+  <alternative>Consider Timezones</alternative></data>
+  <data name="Drive_LocalWeatherHeader" xml:space="preserve">
+    <value>Paikallinen säätila</value>
+  <alternative>Local Weather</alternative></data>
+  <data name="Drive_SetTimeManuallyHeader" xml:space="preserve">
+    <value>Aseta aika manuaalisesti</value>
+  <alternative>Set Time Manually</alternative></data>
+  <data name="Filter_ByAcceleration" xml:space="preserve">
+    <value>Suodata samankaltaisen kiihtyvyyden mukaan</value>
+  <alternative>Filter By Similar Acceleration</alternative></data>
+  <data name="Filter_ByAge" xml:space="preserve">
+    <value>Suodata iän mukaan</value>
+  <alternative>Filter By Age</alternative></data>
+  <data name="Filter_ByAuthor" xml:space="preserve">
+    <value>Suodata tekijän mukaan</value>
+  <alternative>Filter By Author</alternative></data>
+  <data name="Filter_ByBrand" xml:space="preserve">
+    <value>Suodata merkin mukaan</value>
+  <alternative>Filter By Brand</alternative></data>
+  <data name="Filter_ByCar" xml:space="preserve">
+    <value>Suodata auton mukaan</value>
+  <alternative>Filter By Car</alternative></data>
+  <data name="Filter_ByCity" xml:space="preserve">
+    <value>Suodata kaupungin mukaan</value>
+  <alternative>Filter By City</alternative></data>
+  <data name="Filter_ByClass" xml:space="preserve">
+    <value>Suodata luokan mukaan</value>
+  <alternative>Filter By Class</alternative></data>
+  <data name="Filter_ByCountry" xml:space="preserve">
+    <value>Suodata maan mukaan</value>
+  <alternative>Filter By Country</alternative></data>
+  <data name="Filter_ByDecade" xml:space="preserve">
+    <value>Suodata vuosikymmenen mukaan</value>
+  <alternative>Filter By Decade</alternative></data>
+  <data name="Filter_ByDriver" xml:space="preserve">
+    <value>Suodata kuljettajan nimen mukaan</value>
+  <alternative>Filter By Driver Name</alternative></data>
+  <data name="Filter_ByNumber" xml:space="preserve">
+    <value>Suodata numeron mukaan</value>
+  <alternative>Filter By Number</alternative></data>
+  <data name="Filter_ByPower" xml:space="preserve">
+    <value>Suodata samantehoisten mukaan</value>
+  <alternative>Filter By Similar Power</alternative></data>
+  <data name="Filter_ByPriority" xml:space="preserve">
+    <value>Suodata tärkeysasteen mukaan</value>
+  <alternative>Filter By Priority</alternative></data>
+  <data name="Filter_ByPwRatio" xml:space="preserve">
+    <value>Suodata samankaltaisen teho-painosuhteen mukaan</value>
+  <alternative>Filter By Similar P/W Ratio</alternative></data>
+  <data name="Filter_BySize" xml:space="preserve">
+    <value>Suodata koon mukaan</value>
+  <alternative>Filter By Size</alternative></data>
+  <data name="Filter_ByTag" xml:space="preserve">
+    <value>Suodata avainsanan mukaan</value>
+  <alternative>Filter By Tag</alternative></data>
+  <data name="Filter_ByTeam" xml:space="preserve">
+    <value>Suodata tallin perusteella</value>
+  <alternative>Filter By Team</alternative></data>
+  <data name="Filter_ByTopSpeed" xml:space="preserve">
+    <value>Suodata samankaltaisen huippunopeuden perusteella</value>
+  <alternative>Filter By Similar Top Speed</alternative></data>
+  <data name="Filter_ByTorque" xml:space="preserve">
+    <value>Suodata samankaltaisen väännön mukaan</value>
+  <alternative>Filter By Similar Torque</alternative></data>
+  <data name="Filter_ByTrack" xml:space="preserve">
+    <value>Suodata radan mukaan</value>
+  <alternative>Filter By Track</alternative></data>
+  <data name="Filter_ByWeather" xml:space="preserve">
+    <value>Suodata säätilan mukaan</value>
+  <alternative>Filter By Weather</alternative></data>
+  <data name="Filter_ByWeight" xml:space="preserve">
+    <value>Suodata samankaltaisen painon mukaan</value>
+  <alternative>Filter By Similar Weight</alternative></data>
+  <data name="Filter_ByYear" xml:space="preserve">
+    <value>Suodata vuoden mukaan</value>
+  <alternative>Filter By Year</alternative></data>
+  <data name="Font_MissingFonts" xml:space="preserve">
+    <value>Puuttuvat kirjasimet</value>
+  <alternative>Missing Fonts</alternative></data>
+  <data name="KunosCareer_AiLevelLabel" xml:space="preserve">
+    <value>Tekoälyn taso:</value>
+  <alternative>AI Level:</alternative></data>
+  <data name="KunosCareer_ResetProgress_Title" xml:space="preserve">
+    <value>Tyhjennä mestaruussarjan edistyminen</value>
+  <alternative>Reset Championship Progress</alternative></data>
+  <data name="KunosCareer_Title" xml:space="preserve">
+    <value>Kunos Ura</value>
+  <alternative>Kunos Career</alternative></data>
+  <data name="KunosCareer_TrackState" xml:space="preserve">
+    <value>Radan tila:</value>
+  <alternative>Track State:</alternative></data>
+  <data name="LiveryIcon_CannotChange" xml:space="preserve">
+    <value>Can’t change livery image</value>
+  </data>
+  <data name="LiveryIcon_ChangeNumber_Title" xml:space="preserve">
+    <value>Skin Number Is Changed</value>
+  </data>
+  <data name="LiveryIcon_Shape_DiagonalLineWithCircle" xml:space="preserve">
+    <value>Viisto linja ympyrällä</value>
+  <alternative>Diagonal line with Circle</alternative></data>
+  <data name="LiveryIcon_Shape_DiagonalWithCircle" xml:space="preserve">
+    <value>Viisto ympyrällä</value>
+  <alternative>Diagonal with Circle</alternative></data>
+  <data name="LiveryIcon_Shape_DoubleStripes" xml:space="preserve">
+    <value>Tupla raidat</value>
+  <alternative>Double Stripes</alternative></data>
+  <data name="LiveryIcon_Shape_HorizontalSplit" xml:space="preserve">
+    <value>Vaakatason jakaus</value>
+  <alternative>Horizontal Split</alternative></data>
+  <data name="LiveryIcon_Shape_HorizontalStripes" xml:space="preserve">
+    <value>Raidat vaakatasossa</value>
+  <alternative>Horizontal Stripes</alternative></data>
+  <data name="LiveryIcon_Shape_SideStripes" xml:space="preserve">
+    <value>Sivuraidat</value>
+  <alternative>Side Stripes</alternative></data>
+  <data name="LiveryIcon_Shape_TripleHorizontalSplit" xml:space="preserve">
+    <value>Kolmois vaakajakaus</value>
+  <alternative>Triple Horizontal Split</alternative></data>
+  <data name="LiveryIcon_Shape_TripleVerticalSplit" xml:space="preserve">
+    <value>Kolmois pystyjakaus</value>
+  <alternative>Triple Vertical Split</alternative></data>
+  <data name="LiveryIcon_Shape_VerticalSplit" xml:space="preserve">
+    <value>Vertical Split</value>
+  </data>
+  <data name="LiveryIcon_Title" xml:space="preserve">
+    <value>Värityksen ikoni</value>
+  <alternative>Livery Icon</alternative></data>
+  <data name="Main_CannotProcessArgument" xml:space="preserve">
+    <value>Ei voida suorittaa argumenttia: “{0}”</value>
+  <alternative>Can’t process argument</alternative></data>
+  <data name="Main_ImportantTips" xml:space="preserve">
+    <value>Tärkeät neuvot</value>
+  <alternative>Important Tips</alternative></data>
+  <data name="Main_Language" xml:space="preserve">
+    <value>Kieli</value>
+  <alternative>Language</alternative></data>
+  <data name="Main_LapTimesGrid" xml:space="preserve">
+    <value>Lap Times Grid</value>
+  </data>
+  <data name="Main_OfficialSupportNotification" xml:space="preserve">
+    <value>Nyt virallisella tuella!</value>
+  <alternative>Now With Official Support!</alternative></data>
+  <data name="Main_PpFilters" xml:space="preserve">
+    <value>PP -suotimet</value>
+  <alternative>PP Filters</alternative></data>
+  <data name="Main_RecentLapTimes" xml:space="preserve">
+    <value>Viimeiset kierrosajat</value>
+  <alternative>Recent Lap Times</alternative></data>
+  <data name="Main_ReleaseNotes" xml:space="preserve">
+    <value>Julkaisutiedot</value>
+  <alternative>Release Notes</alternative></data>
+  <data name="Main_Title" xml:space="preserve">
+    <value>Content Manager (Kevyt -tila)</value>
+  <alternative>Content Manager (Lite Mode)</alternative></data>
+  <data name="Main_UnsavedChangesHeader" xml:space="preserve">
+    <value>Tallentamattomat muutokset</value>
+  <alternative>Unsaved Changes</alternative></data>
+  <data name="Online_AddByIp" xml:space="preserve">
+    <value>Add By IP</value>
+  </data>
+  <data name="Online_AddNewServer" xml:space="preserve">
+    <value>Lisää uusi palvelin</value>
+  <alternative>Add a New Server</alternative></data>
+  <data name="Online_AddServer" xml:space="preserve">
+    <value>Server address (IP &amp; HTTP or TCP Port):</value>
+  </data>
+  <data name="Online_AddServer_Title" xml:space="preserve">
+    <value>Add New Servers</value>
+  </data>
+  <data name="Online_SortByCapacity" xml:space="preserve">
+    <value>Järjestä kapasiteetin mukaan</value>
+  <alternative>Sort By Capacity</alternative></data>
+  <data name="Online_SortByCarsNumber" xml:space="preserve">
+    <value>Järjestä autojen numeroiden mukaan</value>
+  <alternative>Sort By Cars Number</alternative></data>
+  <data name="Online_SortByDrivers" xml:space="preserve">
+    <value>Järjestä kuljettajien mukaan</value>
+  <alternative>Sort By Drivers</alternative></data>
+  <data name="Online_SortByName" xml:space="preserve">
+    <value>Järjestä nimen mukaan</value>
+  <alternative>Sort By Name</alternative></data>
+  <data name="Online_SortByPing" xml:space="preserve">
+    <value>Järjestä ping:in mukaan</value>
+  <alternative>Sort By Ping</alternative></data>
+  <data name="Online_Sorting_CarsNumber" xml:space="preserve">
+    <value>Autojen numerot</value>
+  <alternative>Cars Number</alternative></data>
+  <data name="RaceGrid_CandidatePriority" xml:space="preserve">
+    <value>Candidate priority</value>
+  </data>
+  <data name="RaceResult_MaxLevel" xml:space="preserve">
+    <value>Maksimi taso:</value>
+  <alternative>Max Level: </alternative></data>
+  <data name="RaceResult_SaveReplay" xml:space="preserve">
+    <value>Save replay</value>
+  </data>
+  <data name="RaceResult_UnsaveReplay" xml:space="preserve">
+    <value>Unsave replay</value>
+  </data>
+  <data name="Replay_DefaultUploadedName" xml:space="preserve">
+    <value>AC Replay</value>
+  </data>
+  <data name="Rsr_Commentary" xml:space="preserve">
+    <value>If you’re using Chrome-like browser, [url="https://chrome.google.com/webstore/detail/rsr-live-timing-content-m/gpapaefcdeoafonlilichclhkmnhalcc"]here[/url] is an extension for starting RSR events directly from browser!</value>
+  </data>
+  <data name="Rsr_SessionName" xml:space="preserve">
+    <value>RSR Hotlap</value>
+  </data>
+  <data name="Settings_Content_LoadingConcurrency_Tooltip" xml:space="preserve">
+    <value>Smaller value may increase UI responsibleness, but decrease loading times</value>
+  </data>
+  <data name="Settings_CustomShowroom_Bloom" xml:space="preserve">
+    <value>Use bloom</value>
+  </data>
+  <data name="Settings_Drive_ExtendedWeatherHeader" xml:space="preserve">
+    <value>Extended Weather:</value>
+  </data>
+  <data name="Settings_Drive_OverridePpFilterOculusFix" xml:space="preserve">
+    <value>Override default PP filter in Oculus Rift mode</value>
+  </data>
+  <data name="Settings_General_AutoUpdatesHeader" xml:space="preserve">
+    <value>Auto Updates:</value>
+  </data>
+  <data name="Settings_General_CheckForUpdates" xml:space="preserve">
+    <value>Check For Updates</value>
+  </data>
+  <data name="Settings_General_TestingAccessHeader" xml:space="preserve">
+    <value>Testing Access:</value>
+  </data>
+  <data name="Settings_General_ValuesCleanUp" xml:space="preserve">
+    <value>Clean Up</value>
+  </data>
+  <data name="Settings_General_ValuesHeader" xml:space="preserve">
+    <value>Values Storage:</value>
+  </data>
+  <data name="Settings_General_WindowsShortcut" xml:space="preserve">
+    <value>Start Menu shortcut (for modern notifications)</value>
+  </data>
+  <data name="Settings_General_WindowsShortcut_Tooltip" xml:space="preserve">
+    <value>Create Start Menu shortcut; required for showing proper notifications in Windows 8, 8.1 and 11</value>
+  </data>
+  <data name="Settings_Locale_CustomTranslationsHeader" xml:space="preserve">
+    <value>Custom Translations</value>
+  </data>
+  <data name="Settings_Locale_HowToTranslate" xml:space="preserve">
+    <value>How To Translate</value>
+  </data>
+  <data name="Settings_Locale_ResxMode" xml:space="preserve">
+    <value>Translate Resx Files</value>
+  </data>
+  <data name="Settings_QuickSwitches_Description" xml:space="preserve">
+    <value>Quick Switches — a small popup menu, which allows to change different settings from any place of the program. To open this menu, press Alt+~ or the right mouse button. Also, you can change settings by pressing Alt+1…Alt+9.[br][br]If you want some new option, write it [url="https://trello.com/c/ad89Y9rL/71-quick-switches"]here[/url] or [url="https://trello.com/c/w5xT6ssZ/49-contacts"]using any other way[/url].</value>
+  </data>
+  <data name="Settings_Replays_AddExtensionToExisting" xml:space="preserve">
+    <value>Add To Existing</value>
+  </data>
+  <data name="Settings_Replays_NameFormat_Tooltip" xml:space="preserve">
+    <value>Used for saving or autosaving replays after the race.
+
+Values for replacement:
+ [b][mono]{type}[/mono][/b] — type of race;
+ [b][mono]{car}[/mono][/b] — car's name;
+ [b][mono]{car.id}[/mono][/b] — car's id;
+ [b][mono]{track}[/mono][/b] — track's name;
+ [b][mono]{track.id}[/mono][/b] — track's id;
+ [b][mono]{date}[/mono][/b] — date and time in proper format;
+ [b][mono]{date_ac}[/mono][/b] — date and time in AC format.
+
+Modifiers:
+ [b][mono]{…:l}[/mono][/b] — lowercase;
+ [b][mono]{…:u}[/mono][/b] — uppercase;
+ [b][mono]{…:0}[/mono][/b] — only first symbol.
+
+Examples:
+ [b][mono]{car.id}_{track.id}_{date_ac}[/mono][/b] — default Kunos format;
+ [b][mono]({type:l0}) {car:l} on {track:l}.acreplay[/mono][/b] — something like “[w] bmw m3 e30 on brands hatch.acreplay”.
+
+If you need some other values, please, contact us and we’ll add them.
+
+[b]Warning[/b]:
+ Don't use symbols like “[” or “]”!</value>
+  </data>
+  <data name="Solution_GenerateLivery" xml:space="preserve">
+    <value>Generate new livery</value>
+  </data>
+  <data name="Solution_GenerateLivery_Details" xml:space="preserve">
+    <value>Generate a new livery using last settings of Livery Editor</value>
+  </data>
+  <data name="Solution_RandomLivery" xml:space="preserve">
+    <value>Generate random livery</value>
+  </data>
+  <data name="Solution_RandomLivery_Details" xml:space="preserve">
+    <value>Generate a new livery using random settings</value>
+  </data>
+  <data name="Solution_SetBrandBadge_Details" xml:space="preserve">
+    <value>Set the brand’s badge from Content storage</value>
+  </data>
+  <data name="Solution_SetUpgradeIcon_Details" xml:space="preserve">
+    <value>Set the upgrade icon from Content storage</value>
+  </data>
+  <data name="Solution_SetupLivery" xml:space="preserve">
+    <value>Setup new livery</value>
+  </data>
+  <data name="Solution_SetupLivery_Details" xml:space="preserve">
+    <value>Select a new livery using Livery Editor</value>
+  </data>
+  <data name="Srs_ReadyNotificationHeader" xml:space="preserve">
+    <value>SRS Server Is Ready</value>
+  </data>
+  <data name="Tags_CleanUp" xml:space="preserve">
+    <value>Clean Up Tags</value>
+  </data>
+  <data name="Tags_CleanUpAndSort" xml:space="preserve">
+    <value>Clean Up &amp; Sort Tags</value>
+  </data>
+  <data name="Tags_Sort" xml:space="preserve">
+    <value>Sort Tags</value>
+  </data>
+  <data name="Toolbar_ChangeLivery" xml:space="preserve">
+    <value>Change Livery</value>
+  </data>
+  <data name="Toolbar_ChangeLivery_Tooltip" xml:space="preserve">
+    <value>Change skin’s livery.png (Ctrl+L)</value>
+  </data>
+  <data name="Toolbar_CopyValues" xml:space="preserve">
+    <value>Copy Values</value>
+  </data>
+  <data name="Toolbar_CreateNewFont" xml:space="preserve">
+    <value>Create New Font</value>
+  </data>
+  <data name="Toolbar_CreateNewShowroom" xml:space="preserve">
+    <value>Create New Showroom</value>
+  </data>
+  <data name="Toolbar_Delete_AppTooltip" xml:space="preserve">
+    <value>Remove app to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_Delete_FontTooltip" xml:space="preserve">
+    <value>Remove font to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_Delete_PpFilterTooltip" xml:space="preserve">
+    <value>Remove PP filter to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_Delete_ReplayTooltip" xml:space="preserve">
+    <value>Remove replay to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_Delete_SetupTooltip" xml:space="preserve">
+    <value>Remove setup to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_Delete_ShowroomTooltip" xml:space="preserve">
+    <value>Remove showroom to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_Delete_SkinTooltip" xml:space="preserve">
+    <value>Remove skin to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_Delete_TrackTooltip" xml:space="preserve">
+    <value>Remove track to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_Delete_WeatherTooltip" xml:space="preserve">
+    <value>Remove weather to Recycle Bin (Ctrl+Delete)</value>
+  </data>
+  <data name="Toolbar_DisableEditMode" xml:space="preserve">
+    <value>Disable Edit Mode</value>
+  </data>
+  <data name="Toolbar_DisableEditMode_Tooltip" xml:space="preserve">
+    <value>Switch from Edit Mode (Ctrl+E)</value>
+  </data>
+  <data name="Toolbar_DisableUnused" xml:space="preserve">
+    <value>Disable Unused</value>
+  </data>
+  <data name="Toolbar_EditMode" xml:space="preserve">
+    <value>Edit Mode</value>
+  </data>
+  <data name="Toolbar_EditMode_Tooltip" xml:space="preserve">
+    <value>Switch to Edit Mode (Ctrl+E)</value>
+  </data>
+  <data name="Toolbar_FindInformation" xml:space="preserve">
+    <value>Find Information</value>
+  </data>
+  <data name="Toolbar_GenerateLivery" xml:space="preserve">
+    <value>Generate Livery</value>
+  </data>
+  <data name="Toolbar_GenerateLivery_Tooltip" xml:space="preserve">
+    <value>Generate a new livery using last settings of Livery Editor</value>
+  </data>
+  <data name="Toolbar_GenerateRandomLivery" xml:space="preserve">
+    <value>Generate Random Livery</value>
+  </data>
+  <data name="Toolbar_GenerateRandomLivery_Tooltip" xml:space="preserve">
+    <value>Generate a new livery using random settings</value>
+  </data>
+  <data name="Toolbar_PackData" xml:space="preserve">
+    <value>Pack Data</value>
+  </data>
+  <data name="Toolbar_PackData_Tooltip" xml:space="preserve">
+    <value>For a decent online (Ctrl+J)</value>
+  </data>
+  <data name="Toolbar_ReplaceSound" xml:space="preserve">
+    <value>Replace Sound</value>
+  </data>
+  <data name="Toolbar_ReplaceSound_Tooltip" xml:space="preserve">
+    <value>Replace sound by a sound of any other car</value>
+  </data>
+  <data name="Toolbar_RescanUsings" xml:space="preserve">
+    <value>Rescan Usings</value>
+  </data>
+  <data name="Toolbar_TurnOffSound" xml:space="preserve">
+    <value>Turn Off Sound</value>
+  </data>
+  <data name="Toolbar_TurnOnSound" xml:space="preserve">
+    <value>Turn On Sound</value>
+  </data>
+  <data name="Toolbar_UnpackData" xml:space="preserve">
+    <value>Unpack Data</value>
+  </data>
+  <data name="Toolbar_UpdateMap" xml:space="preserve">
+    <value>Update Map</value>
+  </data>
+  <data name="Toolbar_UpdatePreview" xml:space="preserve">
+    <value>Update Preview</value>
+  </data>
+  <data name="Toolbar_UpdatePreviews" xml:space="preserve">
+    <value>Update Previews</value>
+  </data>
+  <data name="Toolbar_UpdatePreviewsManually" xml:space="preserve">
+    <value>Manual Mode</value>
+  </data>
+  <data name="Toolbar_UpdatePreviewWithoutShooting" xml:space="preserve">
+    <value>Without Shooting</value>
+  </data>
+  <data name="Toolbar_UploadAndShare" xml:space="preserve">
+    <value>Upload &amp; Share</value>
+  </data>
+  <data name="UpgradeIcon_Commentary" xml:space="preserve">
+    <value>Ctrl+I: Italic, Ctrl+B: Bold</value>
+  </data>
+  <data name="UpgradeIcon_SelectNew" xml:space="preserve">
+    <value>Select New Upgrade Icon</value>
+  </data>
+  <data name="UpgradeIcon_Title" xml:space="preserve">
+    <value>Upgrade Icon</value>
+  </data>
+  <data name="VersionInfo_Title" xml:space="preserve">
+    <value>Version Info</value>
+  </data>
+  <data name="AcSettings_SessionInformation" xml:space="preserve">
+    <value>Session information</value>
+  </data>
+  <data name="Settings_Content_ConfirmBeforeRemoval_Tooltip" xml:space="preserve">
+    <value>Keep in mind that all removed content always can be restored from Recycle Bin</value>
+  </data>
+  <data name="AcSettings_Skidmarks_Height" xml:space="preserve">
+    <value>Pituus maastamitattuna</value>
+  <alternative>Height from the ground</alternative></data>
+  <data name="CarPreviews_AllEffects_Tooltip" xml:space="preserve">
+    <value>Käytä kaikkia videotehosteita, kuten heijastuksia tai häikäisyä (suositeltavaa)</value>
+  <alternative>Enable all video effets like reflections or glare (recommended)</alternative></data>
+  <data name="Drive_CannotStart_CannotFindAnyCar" xml:space="preserve">
+    <value>Yritykset sopivien autojen löytämiseksi lähtöruudukkoon epäonnistuivat.</value>
+  <alternative>Attempt to find any car fitting selected grid type is failed.</alternative></data>
+  <data name="Settings_Content_LookAtWikipedia" xml:space="preserve">
+    <value>Look at Wikipedia by default</value>
+  </data>
+  <data name="Settings_General_ValuesCleanUp_Tooltip" xml:space="preserve">
+    <value>Remove all nonimportant values</value>
+  </data>
+  <data name="Solution_MakeEmptyModel_Details" xml:space="preserve">
+    <value>With nothing, only emptyness</value>
+  </data>
+  <data name="Solution_RestoreJsonFile_Details" xml:space="preserve">
+    <value>App will make an attempt to read known properties from damaged JSON file (be carefull, data loss is possible)</value>
+  </data>
+  <data name="Toolbar_UploadAndShare_ReplayTooltip" xml:space="preserve">
+    <value>Share replay using Google Drive (Ctrl+Page Up)</value>
+  </data>
+  <data name="RaceGrid_OverTheLimit" xml:space="preserve">
+    <value>There is no pit stop for this car</value>
+  </data>
+  <data name="Controls_AlreadyUsed_MultipleMessage" xml:space="preserve">
+    <value>“{0}” on jo käytössä {1} ja {2}. Haluatko korvata vanhan uudella?</value>
+  </data>
+  <data name="Controls_AlreadyUsed_Message" xml:space="preserve">
+    <value>“{0}” käyttää jo komentoa {1}. Haluatko poistaa vanhan uudella?</value>
+  </data>
+  <data name="CarPreviews_ShowroomIsMissing" xml:space="preserve">
+    <value>[url="{0}"]{1}[/url] ei asennettu. Asennetaanko?</value>
+  </data>
+  <data name="Drive_Weather_Warning" xml:space="preserve">
+    <value>{}Oikea säätila ({0}) ei tuettu</value>
+  </data>
+  <data name="List_Apps" xml:space="preserve">
+    <value>{0} sovellus</value>
+  </data>
+  <data name="List_Cars" xml:space="preserve">
+    <value>{0} auto</value>
+  </data>
+  <data name="List_PpFilters" xml:space="preserve">
+    <value>{0} suodin</value>
+  </data>
+  <data name="List_Fonts" xml:space="preserve">
+    <value>{0} kirjasin</value>
+  </data>
+  <data name="List_ServerPresets" xml:space="preserve">
+    <value>{0} esiasetus</value>
+  </data>
+  <data name="List_Replays" xml:space="preserve">
+    <value>{0} uusinta</value>
+  </data>
+  <data name="Online_ServersFormat" xml:space="preserve">
+    <value>{0} palvelin</value>
+  </data>
+  <data name="List_Setups" xml:space="preserve">
+    <value>{0} asetus</value>
+  </data>
+  <data name="List_Showrooms" xml:space="preserve">
+    <value>{0} näyttelytila</value>
+  </data>
+  <data name="List_Skins" xml:space="preserve">
+    <value>{0} skini</value>
+  </data>
+  <data name="List_Tracks" xml:space="preserve">
+    <value>{0} rata</value>
+  </data>
+  <data name="List_Weather" xml:space="preserve">
+    <value>{0} säätila</value>
+  </data>
+  <data name="Main_About" xml:space="preserve">
+    <value>Tietoja</value>
+  </data>
+  <data name="CarSpecs_AccelerationLabel" xml:space="preserve">
+    <value>Kiihtyvyys:</value>
+  </data>
+  <data name="Drive_Temperature_Warning" xml:space="preserve">
+    <value>Oikea lämpötila ei asetu asteikolle, lähintä arvoa käytetään</value>
+  </data>
+  <data name="Drive_ActualTemperature" xml:space="preserve">
+    <value>Todellinen lämpötila:</value>
+  </data>
+  <data name="Drive_Time_Warning" xml:space="preserve">
+    <value>Oikea aika ei asetu asteikolle, lähintä arvoa käytetään</value>
+  </data>
+  <data name="BrandBadge_AddAs" xml:space="preserve">
+    <value>Lisää uusi tunnus (Merkin nimi):</value>
+  </data>
+  <data name="Controls_AdditionalBindings" xml:space="preserve">
+    <value>Lisänäppäimet:</value>
+  </data>
+  <data name="Drive_AiArrangeOrder" xml:space="preserve">
+    <value>Tekoälyn järjestys</value>
+  </data>
+  <data name="Drive_AiFiltering" xml:space="preserve">
+    <value>Suodattaa tekoälyautoja…</value>
+  </data>
+  <data name="Drive_AiCarsLoading" xml:space="preserve">
+    <value>Lataa tekoälyautoja...</value>
+  </data>
+  <data name="KunosCareer_ResetProgress_Message" xml:space="preserve">
+    <value>Kaikki mestaruussarjan edistys poistetaan. Oletko varma?</value>
+  </data>
+  <data name="AcSettings_System_FreeCamera" xml:space="preserve">
+    <value>Salli vapaa kamera</value>
+  </data>
+  <data name="Controls_AlreadyUsed" xml:space="preserve">
+    <value>Jo käytössä</value>
+  </data>
+  <data name="AcSettings_Video_AnitrosopicFilteringLabel" xml:space="preserve">
+    <value>Anistrooppinen suodatus:</value>
+  </data>
+  <data name="AppKey_Title" xml:space="preserve">
+    <value>Sovellusavain</value>
+  </data>
+  <data name="Drive_ListOfPossibleOpponents_Tooltip" xml:space="preserve">
+    <value>Sovellus ottaa {0} {vastustajaa} listasta</value>
+  </data>
+  <data name="Arguments_Shared_Apply" xml:space="preserve">
+    <value>Käytä</value>
+  </data>
+  <data name="AcSettings_Apps" xml:space="preserve">
+    <value>Ohjelmat</value>
+  </data>
+  <data name="Main_Apps" xml:space="preserve">
+    <value>Sovellukset</value>
+  </data>
+  <data name="Drive_ArrangeInReverseOrder" xml:space="preserve">
+    <value>Järjestä päinvastaisessa järjestyksessä</value>
+  </data>
+  <data name="Drive_ArrangeRandomly" xml:space="preserve">
+    <value>Järjestä sattumanvaraisesti</value>
+  </data>
+  <data name="CarSpecs_AutomaticallyRecalculatePwRatio" xml:space="preserve">
+    <value>Uudelleenlaske automaattisesti teho-painosuhde</value>
+  </data>
+  <data name="AcSettings_Video_Benchmark" xml:space="preserve">
+    <value>Suorituskykytesti</value>
+  </data>
+  <data name="RaceResult_BestLap" xml:space="preserve">
+    <value>Paras Kierros:</value>
+  </data>
+  <data name="Controls_BrakeBalance" xml:space="preserve">
+    <value>Jarrutasapaino:</value>
+  </data>
+  <data name="LiveryIcon_Style_Bright" xml:space="preserve">
+    <value>Kirkas</value>
+  </data>
+  <data name="Controls_Buttons" xml:space="preserve">
+    <value>Näppäimet</value>
+  </data>
+  <data name="Common_CannotAddToLibrary" xml:space="preserve">
+    <value>Uutta merkintää ei voi lisätä kirjastoon</value>
+  </data>
+  <data name="BrandBadge_CannotChange" xml:space="preserve">
+    <value>Merkin tunnusta ei voida vaihtaa</value>
+  </data>
+  <data name="CarPreviews_CannotDownloadShowroom" xml:space="preserve">
+    <value>Näyttelytilaa ei voida ladata “{0}”</value>
+  </data>
+  <data name="Drive_CannotFilter" xml:space="preserve">
+    <value>Ei voida suodattaa sopivia autoja lähtöruudukkoon</value>
+  </data>
+  <data name="Common_CannotFindCarById" xml:space="preserve">
+    <value>Autoa ei löydy ilmoitetulla tunnuksella</value>
+  </data>
+  <data name="Common_CannotFindObjectById" xml:space="preserve">
+    <value>Objektia ei löydy ilmoitetulla tunnuksella</value>
+  </data>
+  <data name="Drive_CannotInitializeLua" xml:space="preserve">
+    <value>Lua ei voida määrittää</value>
+  </data>
+  <data name="CarPreviews_CannotInstallShowroom" xml:space="preserve">
+    <value>Näyttelytilaa ei voida asentaa “{0}”</value>
+  </data>
+  <data name="Changelog_CannotLoad" xml:space="preserve">
+    <value>Ei voinut ladata muutoslokeja</value>
+  </data>
+  <data name="Drive_Weather_CannotLoad" xml:space="preserve">
+    <value>Ei voida ladata oikeaa säätilaa</value>
+  </data>
+  <data name="Car_CannotPackData" xml:space="preserve">
+    <value>Tiedoston pakkaus ei onnistu</value>
+  </data>
+  <data name="CarPreviews_CannotSave" xml:space="preserve">
+    <value>Esikatselua ei voida tallentaa</value>
+  </data>
+  <data name="Common_CannotStartRace" xml:space="preserve">
+    <value>Kisaa ei voitu aloittaa</value>
+  </data>
+  <data name="CarPreviews_CannotUpdateForDisabled" xml:space="preserve">
+    <value>Poistetun auton tai skinin esikatselua ei voida päivittää.</value>
+  </data>
+  <data name="CarPreviews_CancelledMessage" xml:space="preserve">
+    <value>Peruttu.</value>
+  </data>
+  <data name="Online_Sorting_Capacity" xml:space="preserve">
+    <value>Kapasiteetti</value>
+  </data>
+  <data name="LiveryIcon_Shape_Carbon" xml:space="preserve">
+    <value>Hiilikuitu</value>
+  </data>
+  <data name="Main_Career" xml:space="preserve">
+    <value>Ura</value>
+  </data>
+  <data name="Main_Challenges" xml:space="preserve">
+    <value>Haasteet</value>
+  </data>
+  <data name="LiveryIcon_Shape_Circle" xml:space="preserve">
+    <value>Ympyrä</value>
+  </data>
+  <data name="RaceGrid_ClassFormat" xml:space="preserve">
+    <value>Luokka: {0}</value>
+  </data>
+  <data name="Common_ColorLabel" xml:space="preserve">
+    <value>Väri:</value>
+  </data>
+  <data name="LiveryIcon_ColorLabel" xml:space="preserve">
+    <value>Väri:</value>
+  </data>
+  <data name="Controls_CombineWithKeyboard" xml:space="preserve">
+    <value>Yhdistä näppäistön kanssa</value>
+  </data>
+  <data name="Main_Content" xml:space="preserve">
+    <value>Sisältö</value>
+  </data>
+  <data name="Hibernate_TrayText" xml:space="preserve">
+    <value>Content Manager piilotettu</value>
+  </data>
+  <data name="App_DataUpdated_Details" xml:space="preserve">
+    <value>Nykyinen versio: {0}</value>
+  </data>
+  <data name="CarSpecs_RecalculateCurvesUsingDataOnly_Tooltip" xml:space="preserve">
+    <value>Käyrät tullaan uudelleenlaskemaan perustuen engine.ini, mutta sinun pitää määrittää voimansiirron tehohäviö</value>
+  </data>
+  <data name="CarSpecs_RecalculateCurvesUsingDataAndPowerTorque_Tooltip" xml:space="preserve">
+    <value>Käyrät uudelleenlasketaan, perustuen engine.ini, power.lut sekä teho ja vääntö -arvoihin tiedostosta ui_car.json</value>
+  </data>
+  <data name="CarSpecs_ScaleCurvesToPowerTorque_Tooltip" xml:space="preserve">
+    <value>Käyrät skaalataan vastaamaan teho ja vääntö-arvoja ui_car.json tiedostosta(näet ne alla)</value>
+  </data>
+  <data name="AcSettings_Video_CustomResolutionLabel" xml:space="preserve">
+    <value>Muokattu resoluutio:</value>
+  </data>
+  <data name="AcSettings_System_DeveloperApps" xml:space="preserve">
+    <value>Kehittäjäsovellukset</value>
+  </data>
+  <data name="Common_DevMode" xml:space="preserve">
+    <value>Kehittäjätila</value>
+  </data>
+  <data name="Controls_DeviceFormat" xml:space="preserve">
+    <value>Laite: {0}</value>
+  </data>
+  <data name="LiveryIcon_Shape_Diagonal" xml:space="preserve">
+    <value>Viisto</value>
+  </data>
+  <data name="Common_DisablingFormat" xml:space="preserve">
+    <value>Poistetaan {0}…</value>
+  </data>
+  <data name="Main_Drive" xml:space="preserve">
+    <value>Aja</value>
+  </data>
+  <data name="Drive_Ordinal_Parameter" xml:space="preserve">
+    <value>Kuljettaja</value>
+  </data>
+  <data name="Online_Sorting_Drivers" xml:space="preserve">
+    <value>Kuljettajat</value>
+  </data>
+  <data name="CarPreviews_AllEffects" xml:space="preserve">
+    <value>Ota kaikki tehosteet käyttöön</value>
+  </data>
+  <data name="CarPreviews_ShotIn4k_Tooltip" xml:space="preserve">
+    <value>Käytä tätä mahdollistaaksesi parhaan laadun</value>
+  </data>
+  <data name="CarPreviews_Fxaa" xml:space="preserve">
+    <value>Käytä FXAA:ta</value>
+  </data>
+  <data name="Controls_EnableMouseSteering" xml:space="preserve">
+    <value>Salli hiiriohjaus</value>
+  </data>
+  <data name="AcSettings_Video_EnablePostProcessing" xml:space="preserve">
+    <value>Käytä jälkikäsittelytehostetta</value>
+  </data>
+  <data name="AcSettings_Audio_Engine" xml:space="preserve">
+    <value>Moottori</value>
+  </data>
+  <data name="Controls_EngineBrake" xml:space="preserve">
+    <value>Moottorijarru:</value>
+  </data>
+  <data name="RaceResult_ErrorHeader" xml:space="preserve">
+    <value>Virhe:</value>
+  </data>
+  <data name="CarPreviews_ExposureLabel" xml:space="preserve">
+    <value>Valotus:</value>
+  </data>
+  <data name="AcSettings_FieldOfView" xml:space="preserve">
+    <value>Näkökenttä</value>
+  </data>
+  <data name="Common_FileIsMissingDot" xml:space="preserve">
+    <value>Tiedosto “{0}” puuttuu.</value>
+  </data>
+  <data name="CarPreviews_FilterIsMissingOptions" xml:space="preserve">
+    <value>Suodin puuttuu. Avaa asetukset?</value>
+  </data>
+  <data name="Drive_FixedOpponentsStrength" xml:space="preserve">
+    <value>Muokatut vastustajien vaikeustasot</value>
+  </data>
+  <data name="LiveryIcon_Shape_Flat" xml:space="preserve">
+    <value>Litteä</value>
+  </data>
+  <data name="Main_Fonts" xml:space="preserve">
+    <value>Kirjasimet</value>
+  </data>
+  <data name="Arguments_SharedMessage_For" xml:space="preserve">
+    <value>Kenelle</value>
+  </data>
+  <data name="AcSettings_Video_Fullscreen" xml:space="preserve">
+    <value>Kokoruutu</value>
+  </data>
+  <data name="KunosCareer_FullyCompleted" xml:space="preserve">
+    <value>Suoritettu kokonaan</value>
+  </data>
+  <data name="AcSettings_Video_Fxaa" xml:space="preserve">
+    <value>Nopea reunanpehmennys (FXAA)</value>
+  </data>
+  <data name="Controls_GearShiftDebouncing" xml:space="preserve">
+    <value>Vaihteen vaihdon viive</value>
+  </data>
+  <data name="Controls_Gestures" xml:space="preserve">
+    <value>Elkeet:</value>
+  </data>
+  <data name="RsrStarter_GettingInformation" xml:space="preserve">
+    <value>Haetaan istunnon tietoja...</value>
+  </data>
+  <data name="Drive_GhostCar" xml:space="preserve">
+    <value>Kummitus auto</value>
+  </data>
+  <data name="Drive_GhostCarAdvantage" xml:space="preserve">
+    <value>Kummitus auton etumatka</value>
+  </data>
+  <data name="AcSettings_Video_GlareQualityLabel" xml:space="preserve">
+    <value>Heijastuksien laatu:</value>
+  </data>
+  <data name="LiveryIcon_Style_Gloss" xml:space="preserve">
+    <value>Matta</value>
+  </data>
+  <data name="Common_Go" xml:space="preserve">
+    <value>Kisaa!</value>
+  </data>
+  <data name="LiveryIcon_Style_Gradient" xml:space="preserve">
+    <value>Kalteva</value>
+  </data>
+  <data name="AcSettings_Video_HeatShimmering" xml:space="preserve">
+    <value>Lämpöväreet</value>
+  </data>
+  <data name="AcSettings_Video_HighQuality" xml:space="preserve">
+    <value>Korkea laatu</value>
+  </data>
+  <data name="Common_HowTo_Title" xml:space="preserve">
+    <value>Kuinka</value>
+  </data>
+  <data name="AcObject_IdLabel" xml:space="preserve">
+    <value>Tunnus:</value>
+  </data>
+  <data name="Common_IdFormat" xml:space="preserve">
+    <value>Tunnus: {0}</value>
+  </data>
+  <data name="Drive_CannotFilter_Commentary" xml:space="preserve">
+    <value>Jos olet muuttanut GridTypes.json -tiedostoa, varmista että muutokset ovat oikein.</value>
+  </data>
+  <data name="Controls_ShareFfbOnly_Tooltip" xml:space="preserve">
+    <value>Sisällytä kokeelliset FFB ominaisuudet</value>
+  </data>
+  <data name="Controls_InputMethodLabel" xml:space="preserve">
+    <value>Syöttötapa:</value>
+  </data>
+  <data name="Rsr_InvalidParameters" xml:space="preserve">
+    <value>Väärät RSR parametrit</value>
+  </data>
+  <data name="Drive_InvalidScript" xml:space="preserve">
+    <value>Väärä skripti</value>
+  </data>
+  <data name="Controls_InvertFfb" xml:space="preserve">
+    <value>Käännä FFB</value>
+  </data>
+  <data name="Controls_SharedFor_Keyboard" xml:space="preserve">
+    <value>Näppäimistö</value>
+  </data>
+  <data name="Controls_KeyboardSteeringHeader" xml:space="preserve">
+    <value>Näppäimistöohjaus</value>
+  </data>
+  <data name="CarPreviews_HideWatermark_Tooltip" xml:space="preserve">
+    <value>Kunoksen vesileima piilotetaan väliaikaisesti</value>
+  </data>
+  <data name="Main_Lan" xml:space="preserve">
+    <value>Lähiverkko</value>
+  </data>
+  <data name="KunosCareer_LapsLabel" xml:space="preserve">
+    <value>Kierroksia:</value>
+  </data>
+  <data name="RaceResult_Laps" xml:space="preserve">
+    <value>Kierrokset:</value>
+  </data>
+  <data name="Drive_Ordinal_Last" xml:space="preserve">
+    <value>Viimeinen</value>
+  </data>
+  <data name="KunosCareer_LeftToEarn" xml:space="preserve">
+    <value>Ansaittavissa:</value>
+  </data>
+  <data name="Drive_OpponentsMaximumLimitation_Tooltip" xml:space="preserve">
+    <value>Rajoitettu saatavillaolevien varikkotilojen määrällä ({0})</value>
+  </data>
+  <data name="Drive_LoadingFailed" xml:space="preserve">
+    <value>Lataus epäonnistui</value>
+  </data>
+  <data name="AcSettings_System_Logging" xml:space="preserve">
+    <value>Sisäänkirjautuminen (suositeltavaa)</value>
+  </data>
+  <data name="BrandBadge_CannotChange_Commentary" xml:space="preserve">
+    <value>Varmista, että merkin tunnus-tiedosto on kirjoitettavissa.</value>
+  </data>
+  <data name="Common_Manage" xml:space="preserve">
+    <value>Hallitse</value>
+  </data>
+  <data name="CarPreviews_Manual" xml:space="preserve">
+    <value>Käyttöohje</value>
+  </data>
+  <data name="AcSettings_Audio_Master" xml:space="preserve">
+    <value>Päätaso</value>
+  </data>
+  <data name="CarSpecs_Power_Tooltip" xml:space="preserve">
+    <value>Maksimi hevosvoima arvo, suositeltu muoto: “{0}”</value>
+  </data>
+  <data name="CarSpecs_Torque_Tooltip" xml:space="preserve">
+    <value>Maksimi vääntö -arvo, suositeltu arvo: “{0}”</value>
+  </data>
+  <data name="AcSettings_Replays_MaximumSize" xml:space="preserve">
+    <value>Maksimi koko</value>
+  </data>
+  <data name="AcSettings_Replays_RecommendedMaximumSizeFormat" xml:space="preserve">
+    <value>Suurin koko (suositeltu): {0} MB</value>
+  </data>
+  <data name="AcSettings_Video_MipLodBias" xml:space="preserve">
+    <value>Muuta LOD -esiasetusta</value>
+  </data>
+  <data name="AcSettings_Video_MirrorResolutionLabel" xml:space="preserve">
+    <value>Peilien resoluutio:</value>
+  </data>
+  <data name="AcSettings_Video_MirrorsHeader" xml:space="preserve">
+    <value>Peilit:</value>
+  </data>
+  <data name="Main_Miscellaneous" xml:space="preserve">
+    <value>Sekalaiset</value>
+  </data>
+  <data name="Controls_Miscellaneous" xml:space="preserve">
+    <value>Sekalaiset:</value>
+  </data>
+  <data name="Common_MoreInformationInMainLog" xml:space="preserve">
+    <value>Lisää tietoa päälokissa Log.log</value>
+  </data>
+  <data name="AcSettings_Video_MotionBlur" xml:space="preserve">
+    <value>Liikkeen sumennus</value>
+  </data>
+  <data name="Controls_MouseSteeringHeader" xml:space="preserve">
+    <value>Hiiriohjaus:</value>
+  </data>
+  <data name="Online_Sorting_Name" xml:space="preserve">
+    <value>Nimi</value>
+  </data>
+  <data name="CreateShowroom_NameLabel" xml:space="preserve">
+    <value>Nimi:</value>
+  </data>
+  <data name="Arguments_SharedMessage" xml:space="preserve">
+    <value>Nimi: [b]{0}[/b]
+{1}: [b]{2}[/b]
+Tekijä: [b]{3}[/b]</value>
+  </data>
+  <data name="Main_OfficialSupportNotification_Details" xml:space="preserve">
+    <value>Uusi käynnistin on nyt valmis, ilman mitään muokkauksia</value>
+  </data>
+  <data name="KunosCareer_Next" xml:space="preserve">
+    <value>Seuraava</value>
+  </data>
+  <data name="Main_NotSupportedRequest" xml:space="preserve">
+    <value>Ei tuettuja pyyntöjä: “{0}”</value>
+  </data>
+  <data name="CarPreviews_Progress" xml:space="preserve">
+    <value>Päivittää: {0} ({1}/{2})</value>
+  </data>
+  <data name="Controls_SharePreset_Tooltip" xml:space="preserve">
+    <value>Vain perusominaisuudet, ilman kokeellisia</value>
+  </data>
+  <data name="Drive_OpponentsStrength" xml:space="preserve">
+    <value>Vastustajien kovuus</value>
+  </data>
+  <data name="Drive_OpponentsStrengthMin" xml:space="preserve">
+    <value>Vastustajien kovuus (min)</value>
+  </data>
+  <data name="KunosCareer_OpponentsLabel" xml:space="preserve">
+    <value>Vastustajat:</value>
+  </data>
+  <data name="RaceGrid_Opponents" xml:space="preserve">
+    <value>Vastustajat:</value>
+  </data>
+  <data name="Controls_OppositeLockSpeed" xml:space="preserve">
+    <value>Vastaohjauksen nopeus</value>
+  </data>
+  <data name="Controls_WarnAboutUnsaved_Tooltip" xml:space="preserve">
+    <value>Muuten sovellus poistaa tallentamattomat versiot Roskakoriin kysymättä</value>
+  </data>
+  <data name="AcSettings_Video_OverallQualityLabel" xml:space="preserve">
+    <value>Kokonaisvaltainen laatu:</value>
+  </data>
+  <data name="Car_PackExistingDataMessage" xml:space="preserve">
+    <value>Pakattu tieto on jo olemassa. Korvaa se? [br][br]Alkuperäinen “data.acd” siirretään Roskakoriin.</value>
+  </data>
+  <data name="CreateShowroom_PanoramaLabel" xml:space="preserve">
+    <value>Panoraama:</value>
+  </data>
+  <data name="AdditionalContent_PathFormat" xml:space="preserve">
+    <value>Polku: {0}</value>
+  </data>
+  <data name="Drive_Penalties" xml:space="preserve">
+    <value>Rangaistukset</value>
+  </data>
+  <data name="Drive_JumpStartPenalty" xml:space="preserve">
+    <value>Rangaistus varaslähdöstä</value>
+  </data>
+  <data name="AcSettings_Video_PixelsPerDisplay" xml:space="preserve">
+    <value>Pikseleitä ruutua kohden</value>
+  </data>
+  <data name="Controls_InvalidDirectory_Commentary" xml:space="preserve">
+    <value>Valitse tiedosto esikansiosta (“cfg\controllers\savedsetups”) tai alikansiosta.</value>
+  </data>
+  <data name="Drive_CannotStart_SelectTrack" xml:space="preserve">
+    <value>Valitse rata</value>
+  </data>
+  <data name="Drive_CannotStart_SetOpponent" xml:space="preserve">
+    <value>Valitse ainakin yksi vastustaja.</value>
+  </data>
+  <data name="Drive_ListOfPossibleOpponentsLabel" xml:space="preserve">
+    <value>Mahdollisten vastustajien lista:</value>
+  </data>
+  <data name="AcSettings_Replays_EventPostLabel" xml:space="preserve">
+    <value>Jälkiuusinnan aikainen komento:</value>
+  </data>
+  <data name="CarSpecs_PwRatio_Tooltip" xml:space="preserve">
+    <value>Teho-painosuhde, suositeltu muoto: “{0}”</value>
+  </data>
+  <data name="AcSettings_Replays_EventPreLabel" xml:space="preserve">
+    <value>Ennen uusintaa komento:</value>
+  </data>
+  <data name="Main_ServerPresets" xml:space="preserve">
+    <value>Esiasetukset</value>
+  </data>
+  <data name="Controls_GearShiftDebouncing_Tooltip" xml:space="preserve">
+    <value>Lisäämällä tätä, estät tuplavaihdon huonoimmissa kokoonpanoissa</value>
+  </data>
+  <data name="Main_Profile" xml:space="preserve">
+    <value>Profiili</value>
+  </data>
+  <data name="KunosCareer_ProgressFormat" xml:space="preserve">
+    <value>Edistyminen: {0}</value>
+  </data>
+  <data name="AcSettings_Replays_QualityLabel" xml:space="preserve">
+    <value>Laatu:</value>
+  </data>
+  <data name="AcSettings_Video_QualityHeader" xml:space="preserve">
+    <value>Laatu:</value>
+  </data>
+  <data name="Main_QuickDrive" xml:space="preserve">
+    <value>Pika</value>
+  </data>
+  <data name="Rsr_Quit" xml:space="preserve">
+    <value>Poistu</value>
+  </data>
+  <data name="Rsr_Quit_Tooltip" xml:space="preserve">
+    <value>Poistu rekisteröinnistä</value>
+  </data>
+  <data name="RaceResult_CancelledHeader" xml:space="preserve">
+    <value>Kisa peruttu</value>
+  </data>
+  <data name="Drive_RaceDuration" xml:space="preserve">
+    <value>Kisan kesto</value>
+  </data>
+  <data name="Drive_Ordinal_Random" xml:space="preserve">
+    <value>Satunnainen</value>
+  </data>
+  <data name="Drive_RealConditions" xml:space="preserve">
+    <value>Oikeat olosuhteet</value>
+  </data>
+  <data name="CarSpecs_Recalculate" xml:space="preserve">
+    <value>Uudelleenlaske</value>
+  </data>
+  <data name="CarSpecs_Recalculate_WeightTooltip" xml:space="preserve">
+    <value>Uudelleenlaske tiedoista</value>
+  </data>
+  <data name="CarSpecs_Recalculate_PwRatioTooltip" xml:space="preserve">
+    <value>Laske arvo uudelleen, käyttäen Hevosvoima ja Paino arvoja</value>
+  </data>
+  <data name="AcSettings_Video_ReflectionsResolutionLabel" xml:space="preserve">
+    <value>Heijastuksien resoluutio:</value>
+  </data>
+  <data name="AcSettings_Video_ReflectionsHeader" xml:space="preserve">
+    <value>Heijastukset:</value>
+  </data>
+  <data name="AcSettings_Video_RenderingDistance" xml:space="preserve">
+    <value>Hahmotusetäisyys</value>
+  </data>
+  <data name="AcSettings_Video_RenderingFrequencyLabel" xml:space="preserve">
+    <value>Hahmotustaajuus:</value>
+  </data>
+  <data name="AcSettings_Video_RenderingModeLabel" xml:space="preserve">
+    <value>Hahmotus tila:</value>
+  </data>
+  <data name="AcSettings_Replays_EventsHeader" xml:space="preserve">
+    <value>Uusintaan liittyvät tapahtumat:</value>
+  </data>
+  <data name="Main_Replays" xml:space="preserve">
+    <value>Uusinnat</value>
+  </data>
+  <data name="AcSettings_ReplaysHeader" xml:space="preserve">
+    <value>Uusinnat:</value>
+  </data>
+  <data name="KunosCareer_RequiredSeriesAreNotDoneYet" xml:space="preserve">
+    <value>Vaadittavia sarjoja ei ole vielä suoritettu</value>
+  </data>
+  <data name="Common_RequiredValue" xml:space="preserve">
+    <value>Vaadittu arvo</value>
+  </data>
+  <data name="CarPreviews_ResizePreviews" xml:space="preserve">
+    <value>Uudelleenmitoita esikatselut</value>
+  </data>
+  <data name="CarPreviews_ResizePreviews_Tooltip" xml:space="preserve">
+    <value>Uudelleenmitoita esikatselut Kunoksen kokoon 1022×575 (erittäin suositeltavaa)</value>
+  </data>
+  <data name="AcSettings_Video_ResolutionLabel" xml:space="preserve">
+    <value>Resoluutio:</value>
+  </data>
+  <data name="Common_Restart" xml:space="preserve">
+    <value>Aloita uudelleen</value>
+  </data>
+  <data name="LiveryIcon_ResultLabel" xml:space="preserve">
+    <value>Tulos:</value>
+  </data>
+  <data name="Controls_ReturnRate" xml:space="preserve">
+    <value>Palautuksen taso</value>
+  </data>
+  <data name="Main_ServerRunning" xml:space="preserve">
+    <value>Käynnissä</value>
+  </data>
+  <data name="AcSettings_Video_Saturation" xml:space="preserve">
+    <value>Kylläisyys</value>
+  </data>
+  <data name="Main_Screenshots" xml:space="preserve">
+    <value>Kuvakaappaus</value>
+  </data>
+  <data name="LiveryIcon_SecondaryColorLabel" xml:space="preserve">
+    <value>Valinnainen väri:</value>
+  </data>
+  <data name="KunosCareer_SeriesGoal" xml:space="preserve">
+    <value>Sarjojen tavoite:</value>
+  </data>
+  <data name="Main_Server" xml:space="preserve">
+    <value>Palvelin</value>
+  </data>
+  <data name="CarPreviews_Manual_Tooltip" xml:space="preserve">
+    <value>Aseta kameran paikka manuaalisesti ja paina F8 kuvataksesi</value>
+  </data>
+  <data name="Drive_AiArrangeOrder_Tooltip" xml:space="preserve">
+    <value>Laita nouseva, jos haluat parhaimman botin olevan taaimmaisena lähtöruudukossa</value>
+  </data>
+  <data name="Main_Settings" xml:space="preserve">
+    <value>Asetukset</value>
+  </data>
+  <data name="Main_Setups" xml:space="preserve">
+    <value>Säädöt</value>
+  </data>
+  <data name="LiveryIcon_ShapeLabel" xml:space="preserve">
+    <value>Muoto:</value>
+  </data>
+  <data name="Common_Share_SettingsTooltip" xml:space="preserve">
+    <value>Jaa nykyiset asetukset (Ctrl+Page Up)</value>
+  </data>
+  <data name="Common_Share_WeatherTooltip" xml:space="preserve">
+    <value>Jaa säätila (Ctrl+Page Up)</value>
+  </data>
+  <data name="Controls_ShiftersHeader" xml:space="preserve">
+    <value>Rattivaihteet</value>
+  </data>
+  <data name="Common_ShootingCancelled" xml:space="preserve">
+    <value>Kuvaus peruttu</value>
+  </data>
+  <data name="AcSettings_Video_SmokeInMirrors" xml:space="preserve">
+    <value>Näytä savu peileissä</value>
+  </data>
+  <data name="CarPreviews_ShowroomIsMissingOptions" xml:space="preserve">
+    <value>Näyttelytila puuttuu. Avaa asetukset?</value>
+  </data>
+  <data name="Main_Showrooms" xml:space="preserve">
+    <value>Näyttelytilat</value>
+  </data>
+  <data name="AcSettings_System_SimulationValueLabel" xml:space="preserve">
+    <value>Simulaation taso</value>
+  </data>
+  <data name="Main_OfficialSupportNotification_Message" xml:space="preserve">
+    <value>Versio 1.7 päivityksen jälkeen Kunos lisäsi virallisen tuen muokatuille käynnistimille. Käytännössä nämä toimivat kuten Käynnistin+, mutta nyt CM:n ei tarvitse korvata AssettoCorsa.exe -tiedostoa, ja se on upeaa! Haluatko vaihtaa uuteen viralliseen Käynnistimeen?</value>
+  </data>
+  <data name="Main_Single" xml:space="preserve">
+    <value>Yksittäinen</value>
+  </data>
+  <data name="Online_SkinIsMissing" xml:space="preserve">
+    <value>Skini puuttuu</value>
+  </data>
+  <data name="Car_DeleteSkin_Tooltip" xml:space="preserve">
+    <value>Skini siirretään Roskakoriin</value>
+  </data>
+  <data name="Car_SkinFormat" xml:space="preserve">
+    <value>Skini: {0}</value>
+  </data>
+  <data name="Main_Skins" xml:space="preserve">
+    <value>Skinit</value>
+  </data>
+  <data name="Drive_SkipSession" xml:space="preserve">
+    <value>Ohita</value>
+  </data>
+  <data name="AcSettings_Video_SkyboxReflection" xml:space="preserve">
+    <value>Taustataivaan heijastukset</value>
+  </data>
+  <data name="AcSettings_Video_SmokeGenerationLabel" xml:space="preserve">
+    <value>Savun muodostus:</value>
+  </data>
+  <data name="LiveryIcon_Style_Solid" xml:space="preserve">
+    <value>Yhtenäinen</value>
+  </data>
+  <data name="CreateShowroom_Panorama_Example" xml:space="preserve">
+    <value>Jotenkuten näin:</value>
+  </data>
+  <data name="CarPreviews_SomethingWentWrong" xml:space="preserve">
+    <value>Jokin meni pieleen.</value>
+  </data>
+  <data name="Online_SortByLabel" xml:space="preserve">
+    <value>Järjestä:</value>
+  </data>
+  <data name="Drive_StartFrom" xml:space="preserve">
+    <value>Aloita:</value>
+  </data>
+  <data name="Drive_StartingPosition" xml:space="preserve">
+    <value>Aloitusruutu</value>
+  </data>
+  <data name="KunosCareer_StartingPositionLabel" xml:space="preserve">
+    <value>Aloitusruutu:</value>
+  </data>
+  <data name="Main_Stats" xml:space="preserve">
+    <value>Tilastot</value>
+  </data>
+  <data name="Controls_SteeringSpeed" xml:space="preserve">
+    <value>Ohjauksen nopeus</value>
+  </data>
+  <data name="LiveryIcon_Shape_Stripes" xml:space="preserve">
+    <value>Raidat</value>
+  </data>
+  <data name="LiveryIcon_StyleLabel" xml:space="preserve">
+    <value>Tyyli:</value>
+  </data>
+  <data name="AcSettings_System" xml:space="preserve">
+    <value>Järjestelmä</value>
+  </data>
+  <data name="AcSettings_Video_SystemHeader" xml:space="preserve">
+    <value>Järjestelmä:</value>
+  </data>
+  <data name="CarPreviews_TakenTime" xml:space="preserve">
+    <value>Tuotu {0}</value>
+  </data>
+  <data name="Drive_Temperature" xml:space="preserve">
+    <value>Lämpötila</value>
+  </data>
+  <data name="KunosCareer_TemperatureLabel" xml:space="preserve">
+    <value>Lämpötila:</value>
+  </data>
+  <data name="LiveryIcon_TertiaryColorLabel" xml:space="preserve">
+    <value>Kolmas väri:</value>
+  </data>
+  <data name="Common_Test" xml:space="preserve">
+    <value>Testaa</value>
+  </data>
+  <data name="Controls_Test_Tooltip" xml:space="preserve">
+    <value>Testaa nykyisiä esiasetuksia Quick Drive -istunnossa</value>
+  </data>
+  <data name="AcObject_FontTestLabel" xml:space="preserve">
+    <value>Testi:</value>
+  </data>
+  <data name="LiveryIcon_TextColorLabel" xml:space="preserve">
+    <value>Tekstin väri:</value>
+  </data>
+  <data name="AppKey_PreRestart_Title" xml:space="preserve">
+    <value>Kiitos!</value>
+  </data>
+  <data name="Drive_ArrangeInReverseOrder_Tooltip" xml:space="preserve">
+    <value>Paras vastustaja on viimeisenä lähtöruudukossa</value>
+  </data>
+  <data name="Drive_Time" xml:space="preserve">
+    <value>Aika</value>
+  </data>
+  <data name="Drive_TimeMultiplerLabel" xml:space="preserve">
+    <value>Ajan kerroin</value>
+  </data>
+  <data name="CarSpecs_Acceleration_Tooltip" xml:space="preserve">
+    <value>Aika joka kuluu kiihdytykseen 0-100 km/h, suositeltu muoto: “{0}”</value>
+  </data>
+  <data name="KunosCareer_TimeLabel" xml:space="preserve">
+    <value>Aika:</value>
+  </data>
+  <data name="Online_TimeLabel" xml:space="preserve">
+    <value>Aika:</value>
+  </data>
+  <data name="CarSpecs_MaxSpeed_Tooltip" xml:space="preserve">
+    <value>Huippunopeus, suositeltu muoto: “{0}”</value>
+  </data>
+  <data name="CarSpecs_TorqueLabel" xml:space="preserve">
+    <value>Vääntö:</value>
+  </data>
+  <data name="Drive_TrackStateLabel" xml:space="preserve">
+    <value>Rata:</value>
+  </data>
+  <data name="Main_Tracks" xml:space="preserve">
+    <value>Radat</value>
+  </data>
+  <data name="Controls_TractionControl" xml:space="preserve">
+    <value>Luistonesto:</value>
+  </data>
+  <data name="CarSpecs_TransmissionLoss" xml:space="preserve">
+    <value>Voimansiirron tehohäviö</value>
+  </data>
+  <data name="CarSpecs_FixFormat_Tooltip" xml:space="preserve">
+    <value>Koeta asettaa oikea muoto arvolle</value>
+  </data>
+  <data name="Drive_TyreBlankets" xml:space="preserve">
+    <value>Renkaanlämmittimet</value>
+  </data>
+  <data name="AcSettings_Audio_Ui" xml:space="preserve">
+    <value>Käyttöliittymä</value>
+  </data>
+  <data name="Main_UnhandledException" xml:space="preserve">
+    <value>Käsittelemättömiä poikkeuksia:
+
+{0}</value>
+  </data>
+  <data name="Common_Update" xml:space="preserve">
+    <value>Päivitä</value>
+  </data>
+  <data name="App_NewVersion_Details" xml:space="preserve">
+    <value>Päivitys valmis!: {0}</value>
+  </data>
+  <data name="CarPreviews_Fxaa_Tooltip" xml:space="preserve">
+    <value>Käytä FXAA:ta esikatseluissa</value>
+  </data>
+  <data name="Controls_UseHShifter" xml:space="preserve">
+    <value>Käytä H-kaaviota</value>
+  </data>
+  <data name="Drive_LocalWeather_Tooltip" xml:space="preserve">
+    <value>Käytä paikallista säätä, eikä radan</value>
+  </data>
+  <data name="Controls_UseMouseButtons" xml:space="preserve">
+    <value>Käytä hiiren näppäimiä kaasulle ja jarrulle</value>
+  </data>
+  <data name="Controls_View" xml:space="preserve">
+    <value>Kuvakulma:</value>
+  </data>
+  <data name="Main_Weather" xml:space="preserve">
+    <value>Säätila</value>
+  </data>
+  <data name="Drive_WeatherLabel" xml:space="preserve">
+    <value>Säätila:</value>
+  </data>
+  <data name="KunosCareer_WeatherLabel" xml:space="preserve">
+    <value>Säätila:</value>
+  </data>
+  <data name="CarSpecs_Weight_Tooltip" xml:space="preserve">
+    <value>Paino ilman kuljettajaa, suositeltu arvo: “{0}”</value>
+  </data>
+  <data name="CarSpecs_WeightLabel" xml:space="preserve">
+    <value>Paino:</value>
+  </data>
+  <data name="AdditionalContent_WhatToUpdateLabel" xml:space="preserve">
+    <value>Päivittääksesi:</value>
+  </data>
+  <data name="Arguments_Shared_ShouldApply" xml:space="preserve">
+    <value>Haluatko käyttää tätä asetusta?</value>
+  </data>
+  <data name="Controls_SharedFor_XboxController" xml:space="preserve">
+    <value>Xbox 360 ohjain</value>
+  </data>
+  <data name="CarSpecs_SpecifyPowerAndTorqueFirst" xml:space="preserve">
+    <value>Sinun pitää ensin määrittää teho ja vääntö -arvot.</value>
+  </data>
+  <data name="Car_PackKunosDataMessage" xml:space="preserve">
+    <value>Aiot uudelleenpakata Kunoksen alkuperäistä tietoa. Tulos yleensä kärsii, joten et pysty pelaamaan Onlinessa. Oletko varma, että haluat jatkaa? [br][br]Alkuperäinen “data.acd” siirretään Roskakoriin.</value>
+  </data>
+  <data name="Main_Cars" xml:space="preserve">
+    <value>Autot</value>
+  </data>
+  <data name="Settings_General_Open" xml:space="preserve">
+    <value>Avaa</value>
+  </data>
+  <data name="Settings_General_ShowOccasionalHints" xml:space="preserve">
+    <value>Näytä ajoittaiset vihjeet</value>
+  </data>
+  <data name="Drive_OnlineServer_Stop" xml:space="preserve">
+    <value>Pysäytä</value>
+  </data>
+  <data name="Dialogs_AcRootDirectorySelector_Create" xml:space="preserve">
+    <value>Luo (Suositeltavaa)</value>
+  </data>
+  <data name="Dialogs_AcRootDirectorySelector_Delete" xml:space="preserve">
+    <value>Poista</value>
+  </data>
+  <data name="ContentTools_FilesCompressor_Compress" xml:space="preserve">
+    <value>Pakkaa</value>
+  </data>
+  <data name="ContentTools_FilesCompressor_Decompress" xml:space="preserve">
+    <value>Pura</value>
+  </data>
+  <data name="ContentTools_FilesCompressor_CompressionAlgorithm" xml:space="preserve">
+    <value>Pakkauksen algorytmi</value>
+  </data>
+  <data name="ContentTools_FilesCompressor_Original" xml:space="preserve">
+    <value>Alkuperäinen</value>
+  </data>
+  <data name="ContentTools_FilesCompressor_Compressed" xml:space="preserve">
+    <value>Pakattu</value>
+  </data>
+  <data name="Windows_MainWindow_VideoSettingsFPSCounter" xml:space="preserve">
+    <value>Videoasetukset (Ruudunpäivityslaskuri)</value>
+  </data>
+  <data name="AcSettings_Audio_CantGetTheListOfAudioDevices" xml:space="preserve">
+    <value>Listaa äänilaitteista ei saatu</value>
+  </data>
+  <data name="AcSettings_Audio_Unknown" xml:space="preserve">
+    <value>Tuntematon</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_HardwareLock" xml:space="preserve">
+    <value>Laitteistolukitus (kokeellinen)</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_LogitechHardwareLockOptions" xml:space="preserve">
+    <value>Logitech -laitteiston lukitus asetukset:</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_EnableFFBPostProcessing" xml:space="preserve">
+    <value>Salli FFB -jälkikäsittely</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_PostProcessingMode" xml:space="preserve">
+    <value>Ohjauksen tila:</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_CenterBoostRange" xml:space="preserve">
+    <value>Ohjauksen keskialueen tehostuksen alue</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_CenterBoostGain" xml:space="preserve">
+    <value>Keskialueen tehostuksen vahvistus</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_CenterBoostGain_Tooltip" xml:space="preserve">
+    <value>Käytä tätä tuplaamaan FFB, kun ratti on keskiasennossa</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_PostProcessing" xml:space="preserve">
+    <value>Jälkikäsittely:</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_System_Race" xml:space="preserve">
+    <value>Kisa:</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_System_Car" xml:space="preserve">
+    <value>Auto:</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_System_UI" xml:space="preserve">
+    <value>Järjestelmä:</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_System_Replay" xml:space="preserve">
+    <value>Uusinta:</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_System_Options" xml:space="preserve">
+    <value>Asetukset:</value>
+  </data>
+  <data name="AcSettings_Controls_Scanning_Hint" xml:space="preserve">
+    <value>Jos tarkistuksessa kestää liian kauan, se voi johtua koneesi bugisista ajureista. Esimerkiksi Corsair K55 on tunnettu, että se aiheuttaa ongelmia DirectInput8 kanssa. [url="https://stackoverflow.com/questions/10967795/directinput8-enumdevices-sometimes-painfully-slow"]More information[/url].</value>
+  </data>
+  <data name="AcSettings_Controls_DeviceSettings_Tooltip" xml:space="preserve">
+    <value>Laiteasetukset</value>
+  </data>
+  <data name="AcSettings_Controls_EditNames" xml:space="preserve">
+    <value>Muokkaa nimiä</value>
+  </data>
+  <data name="AcSettings_Controls_ScanDevicesAtLaunch" xml:space="preserve">
+    <value>Tarkista laitteet käynnistyksen yhteydessä</value>
+  </data>
+  <data name="AcSettings_Controls_ResetSystemBindings" xml:space="preserve">
+    <value>Tyhjennä laitteiston määritelmät</value>
+  </data>
+  <data name="AcSettings_General_PitStops" xml:space="preserve">
+    <value>Varikkopysähdykset:</value>
+  </data>
+  <data name="AcSettings_General_UseMousePitStop" xml:space="preserve">
+    <value>Käytä hiirellä tehtäviä varikkopysähdyksiä</value>
+  </data>
+  <data name="AcSettings_General_KeepCameraInTheCar" xml:space="preserve">
+    <value>Pidä kuvakulma auton sisällä</value>
+  </data>
+  <data name="AcSettings_General_PresetsCount" xml:space="preserve">
+    <value>Esiasetusten määrä</value>
+  </data>
+  <data name="AcSettings_General_ReplaysAutosave" xml:space="preserve">
+    <value>Uusintojen autotallennus:</value>
+  </data>
+  <data name="AcSettings_General_MinimumTime" xml:space="preserve">
+    <value>Minimiaika</value>
+  </data>
+  <data name="AcSettings_General_LimitForRaces" xml:space="preserve">
+    <value>Rajoita kisaan</value>
+  </data>
+  <data name="AcSettings_General_LimitForQualifications" xml:space="preserve">
+    <value>Rajoita aika-ajoihin</value>
+  </data>
+  <data name="AcSettings_General_LimitForOtherSessions" xml:space="preserve">
+    <value>Rajoita muihin istuntoihin</value>
+  </data>
+  <data name="AcSettings_Python_EnablePythonApps" xml:space="preserve">
+    <value>Salli Python -sovellukset</value>
+  </data>
+  <data name="AcSettings_Python_KeepDeveloperAppsFlagWithAppsPresets" xml:space="preserve">
+    <value>Pidä kehittäjäsovellusten merkit sovellusten esiasetuksissa</value>
+  </data>
+  <data name="AcSettings_System_VRCameraShake" xml:space="preserve">
+    <value>Virtuaaliltodellisuuden kameran tärinä</value>
+  </data>
+  <data name="AcSettings_Video_PerformanceHit" xml:space="preserve">
+    <value>Suorituskyvyn lasku</value>
+  </data>
+  <data name="AcSettings_Video_PerformanceHit_Tooltip" xml:space="preserve">
+    <value>Iso vaikutus, ei ehkä korreloi todellisuuden kanssa. Laskettu 1920x1080 resoluutiolle.</value>
+  </data>
+  <data name="AcSettings_Video_ResolutionAndFPS" xml:space="preserve">
+    <value>Resoluutio ja ruudunpäivitys:</value>
+  </data>
+  <data name="AcSettings_Video_TimeLimitedBenchmark" xml:space="preserve">
+    <value>Aikarajoitettu suorituskykytesti</value>
+  </data>
+  <data name="AcSettings_Video_TimeLimitedBenchmark_Tooltip" xml:space="preserve">
+    <value>Käytä jos haluat suoraan verrannolliset tulokset</value>
+  </data>
+  <data name="Dialogs_InstallAdditionalContentDialog_Hint" xml:space="preserve">
+    <value>Tiputa tiedostot ja linkit tänne ladataksesi ne täältä</value>
+  </data>
+  <data name="Drive_OnlineServer_MaximumOfContacts_Tooltip" xml:space="preserve">
+    <value>Kosketuksien maksimimäärä kilometriä kohden</value>
+  </data>
+  <data name="Selected_FilterByOrigin" xml:space="preserve">
+    <value>Suodata alkuperän mukaan</value>
+  </data>
+  <data name="Selected_CarPage_ReplaceTyres" xml:space="preserve">
+    <value>Vaihda renkaat</value>
+  </data>
+  <data name="Selected_ClearNotes" xml:space="preserve">
+    <value>Poista huomautukset</value>
+  </data>
+  <data name="Selected_FilterByHavingNotes" xml:space="preserve">
+    <value>Suodata huomautuksien perusteella</value>
+  </data>
+  <data name="Selected_CarPage_ClearStatsFromThisCar" xml:space="preserve">
+    <value>Tyhjennä auton tilastot</value>
+  </data>
+  <data name="Selected_CarSetupPage_Unknown" xml:space="preserve">
+    <value>Tuntematon</value>
+  </data>
+  <data name="Selected_CarSetupPage_DefaultValue" xml:space="preserve">
+    <value>Oletusarvo:</value>
+  </data>
+  <data name="Settings_Drive_LoadAssistsWithQuickDrivePresets" xml:space="preserve">
+    <value>Lataa ajoavut Quick Drive -säätöjen mukaan</value>
+  </data>
+  <data name="Settings_Drive_UsePracticeForTrackDay" xml:space="preserve">
+    <value>Ratapäiväkäyttöön, käytä Vapaata Harjoitusta istuntotyyppinä</value>
+  </data>
+  <data name="Settings_Drive_UsePracticeForTrackDay_Tooltip" xml:space="preserve">
+    <value>Näin varikkopilttuussa on henkilökuntaa, mutta botit ovat passiivisempia</value>
+  </data>
+  <data name="Dialogs_BookingDialog_BookingIsFinished" xml:space="preserve">
+    <value>Varaus suoritettu</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_ImportCSV" xml:space="preserve">
+    <value>Tuo CSV</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_ImportCSV_Tooltip" xml:space="preserve">
+    <value>Tuo CSV-tiedosto WheelChekistä (vedä ja pudota tarvittaessa)</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_ImportLUT" xml:space="preserve">
+    <value>Tuo LUT</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_Import_Tooltip" xml:space="preserve">
+    <value>Vedä ja pudota tarvittaessa</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_HandleMode" xml:space="preserve">
+    <value>Käsittelytila:</value>
+  </data>
+  <data name="AcSettings_Controls_Wheel_ForceFeedback_ABSEffect" xml:space="preserve">
+    <value>ABS:n vaikutus</value>
+  </data>
+  <data name="Dialogs_OnlineDriverTags_NewTag" xml:space="preserve">
+    <value>Uusi avainsana</value>
+  </data>
+  <data name="Dialogs_OnlineDriverTags_RestoreDeleted" xml:space="preserve">
+    <value>Palauta poistettu</value>
+  </data>
+  <data name="Dialogs_OnlineDriverTags_NameOfTheTag_Tooltip" xml:space="preserve">
+    <value>Avainsanan nimi</value>
+  </data>
+  <data name="Dialogs_OnlineDriverTags_DeleteTag" xml:space="preserve">
+    <value>Poista avainsana...</value>
+  </data>
+  <data name="Dialogs_OnlineDriverTags_Names" xml:space="preserve">
+    <value>Nimet:</value>
+  </data>
+  <data name="Dialogs_OnlineDriverTags_Names_Tooltip" xml:space="preserve">
+    <value>Lisää nimet tähän, yksi riviä kohden</value>
+  </data>
+  <data name="Lists_ToolsListPage_Launch" xml:space="preserve">
+    <value>Käynnistä</value>
+  </data>
+  <data name="Miscellaneous_PlayerStats_SessionsNotFound" xml:space="preserve">
+    <value>Istuntoja ei löytynyt.</value>
+  </data>
+  <data name="Miscellaneous_PlayerStats_RemoveMissing" xml:space="preserve">
+    <value>Poista puuttuva</value>
+  </data>
+  <data name="Miscellaneous_PlayerStats_RemoveAllSessionsWithMissingContent_Tooltip" xml:space="preserve">
+    <value>Poista puuttuvien tietojen istunnot</value>
+  </data>
+  <data name="Selected_CarPage_New_PowerGraph" xml:space="preserve">
+    <value>Tehokäyrä:</value>
+  </data>
+  <data name="Selected_CarPage_New_Property_Tooltip" xml:space="preserve">
+    <value>[i]Tiesitkö?[/i] Voit klikata hiiren oikealla näppäimellä ominaisuutta ja suodattaa autoja sen perusteella.</value>
+  </data>
+  <data name="Selected_FilterBySimilarDrivenDistance" xml:space="preserve">
+    <value>Suodata yhtä paljon ajaneiden kesken</value>
+  </data>
+  <data name="Selected_FilterBySimilarMaxSpeedAchieved" xml:space="preserve">
+    <value>Suodata samankaltaisten huippunopeuksien saavuttavien perusteella</value>
+  </data>
+  <data name="Selected_CarPage_New_TSMSetups_Tooltip" xml:space="preserve">
+    <value>Valmiiksi asennettavien säätöjen määrä Setup Marketista</value>
+  </data>
+  <data name="Settings_Drive_AllowDecimalValuesForTrackState" xml:space="preserve">
+    <value>Hyväksy desimaali -arvot radalle</value>
+  </data>
+  <data name="Settings_Drive_AllowDecimalValuesForTrackState_Tooltip" xml:space="preserve">
+    <value>Voi aiheuttaa ongelmia joihinkin sovelluksiin, jos käytössä</value>
+  </data>
+  <data name="Settings_Drive_CheckIfTrackFitsSelectedMode" xml:space="preserve">
+    <value>Varmista sopiiko rata valitulle tilalle</value>
+  </data>
+  <data name="Settings_Drive_CheckIfTrackFitsSelectedMode_Tooltip" xml:space="preserve">
+    <value>En suosittele poiskytkemistä, CM tarjoaa "korjaa radan kuvaus" jos jokin on pielessä. Mutta jos käytät muokattuja avainsanoja, kytke ehdottomasti pois.</value>
+  </data>
+  <data name="Settings_Drive_ShowExtraDropDownListsForSkins" xml:space="preserve">
+    <value>Näytä lisäalasvetolistat skineille, autojen muokkauksille ja ratojen variaatioille</value>
+  </data>
+  <data name="Settings_Drive_ShowExtraDropDownListsForSkins_Tooltip" xml:space="preserve">
+    <value>Voi tiputtaa sovellusta hieman alemmas</value>
+  </data>
+  <data name="Settings_Online_AutoRefreshSelected" xml:space="preserve">
+    <value>Automaattinen päivitys valittu:</value>
+  </data>
+  <data name="Settings_Online_ManageLists" xml:space="preserve">
+    <value>Hallitse listoja</value>
+  </data>
+  <data name="Settings_Online_ManageDriversTags" xml:space="preserve">
+    <value>Hallitse kuljettajien avainsanoja</value>
+  </data>
+  <data name="Settings_Online_Display" xml:space="preserve">
+    <value>Näyttö:</value>
+  </data>
+  <data name="Settings_Online_Passwords" xml:space="preserve">
+    <value>Salasanat:</value>
+  </data>
+  <data name="Settings_Online_AlwaysAllowToUsePassword" xml:space="preserve">
+    <value>Anna käyttää aina salasanoja</value>
+  </data>
+  <data name="Settings_Online_AlwaysAllowToUsePassword_Tooltip" xml:space="preserve">
+    <value>Käytä jos liityt ylläpitäjänä</value>
+  </data>
+  <data name="Settings_Online_FixNames" xml:space="preserve">
+    <value>Korjaa nimet:</value>
+  </data>
+  <data name="Settings_Online_FixNames_Tooltip" xml:space="preserve">
+    <value>Päivittäminen voi olla vaadittu vaihdon jälkeen</value>
+  </data>
+  <data name="Settings_Online_PingAttempts" xml:space="preserve">
+    <value>Ping yritykset</value>
+  </data>
+  <data name="Settings_Online_PresetsFolder" xml:space="preserve">
+    <value>Esiasetusten kansio</value>
+  </data>
+  <data name="Settings_Online_PingServersOnce" xml:space="preserve">
+    <value>Testaa servereiden ping kerran</value>
+  </data>
+  <data name="Settings_Online_PingServersOnce_Tooltip" xml:space="preserve">
+    <value>Testaa serverin ping vain kerran ja painettaessa Päivitä, kuten alkuperäisessä käynnistäjässä</value>
+  </data>
+  <data name="Settings_Online_PausePingingDuringTheRace" xml:space="preserve">
+    <value>Tauota Ping-testaus kisan aikana</value>
+  </data>
+  <data name="Settings_Online_ShowExtendedInformationIfContentIsMissing" xml:space="preserve">
+    <value>Näytä laajennetut tiedot jos sisältö puuttuu</value>
+  </data>
+  <data name="MainWindow_FoundNModUpdates" xml:space="preserve">
+    <value>Löytyi {0} {päivitystä} modeihin</value>
+  </data>
+  <data name="MainWindow_AddDownload_Message" xml:space="preserve">
+    <value>Lisää latauslinkki:</value>
+  </data>
+  <data name="MainWindow_AddDownload_Comment" xml:space="preserve">
+    <value>Tai, kopioi linkki, tai tiedosto ja paina Ctrl+V Content Managerissa.</value>
+  </data>
+  <data name="MainWindow_AddDownload_Title" xml:space="preserve">
+    <value>Lataa</value>
+  </data>
+  <data name="MainWindow_AddDownload_MenuItem" xml:space="preserve">
+    <value>Lataa jotain...</value>
+  </data>
+  <data name="MainWindow_InstallFromAFile_MenuItem" xml:space="preserve">
+    <value>Asenna tiedostosta...</value>
+  </data>
+  <data name="DownloadList_PluginsLoadFailed" xml:space="preserve">
+    <value>Listaa lisäosista ei voida ladata</value>
+  </data>
+  <data name="DownloadList_7ZipComment" xml:space="preserve">
+    <value>7-Zipin avulla voit parantaa asennuksen tehokkuutta ja voit sallia CM:n purkaa kaikentyyppisiä arkistoja:</value>
+  </data>
+  <data name="DownloadList_ViewInExplorer" xml:space="preserve">
+    <value>Näytä selaimessa</value>
+  </data>
+  <data name="DownloadList_Password" xml:space="preserve">
+    <value>Salasana:</value>
+  </data>
+  <data name="DownloadList_DetectionFailed" xml:space="preserve">
+    <value>Sovellus ei pystynyt havaitsemaan sisältöä mitä asentaa. Haluaisitko asentaa manuaalisesti?</value>
+  </data>
+  <data name="DownloadList_ShowFile" xml:space="preserve">
+    <value>Näytä tiedosto</value>
+  </data>
+  <data name="DownloadList_ScanAgain" xml:space="preserve">
+    <value>Tarkista uudelleen</value>
+  </data>
+  <data name="DownloadList_Retry" xml:space="preserve">
+    <value>Yritä uudelleen</value>
+  </data>
+  <data name="DownloadList_ExtraOptions" xml:space="preserve">
+    <value>Lisäasetukset:</value>
+  </data>
+  <data name="DownloadList_Failed" xml:space="preserve">
+    <value>Epäonnistui</value>
+  </data>
+  <data name="DownloadList_NothingFound" xml:space="preserve">
+    <value>Mitään ei löytynyt</value>
+  </data>
+  <data name="DownloadList_Cancelled" xml:space="preserve">
+    <value>Peruttu</value>
+  </data>
+  <data name="DownloadList_Cancelling" xml:space="preserve">
+    <value>Perutaan...</value>
+  </data>
+  <data name="DownloadList_Installing" xml:space="preserve">
+    <value>Asentaa...</value>
+  </data>
+  <data name="DownloadList_Install" xml:space="preserve">
+    <value>Asenna</value>
+  </data>
+  <data name="DownloadList_Resume" xml:space="preserve">
+    <value>Jatka</value>
+  </data>
+  <data name="DownloadList_Pause" xml:space="preserve">
+    <value>Tauko</value>
+  </data>
+  <data name="DownloadList_Restart" xml:space="preserve">
+    <value>Uudelleen</value>
+  </data>
+  <data name="DownloadList_Cancel" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+  <data name="DownloadList_From" xml:space="preserve">
+    <value>Mistä:</value>
+  </data>
+  <data name="DownloadList_NoActiveDownloads" xml:space="preserve">
+    <value>Ei aktiivisia latauksia</value>
+  </data>
+  <data name="Weather_KunosReadme" xml:space="preserve">
+    <value>We are using an equation to create a graph that determines the asphalt temperature relatively to ambient temperature, weather and day time.
+
+Check the graph in [url="http://fooplot.com/plot/3x7y44pfli"]this link[/url].
+
+The equation used is:
+[mono](((-10×α)*x)+10*α)*2((exp(-6*x)*(0.4*sin(6*x))+0.1)*(15/1.5)*sin(0.9*x))+15[/mono]
+
+Change the 1 values in (((-10*1)*x)+10*1) to see the results in your graphs.
+Accepted values are from -1 to 1.</value>
+  </data>
+</root>

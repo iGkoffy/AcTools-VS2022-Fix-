@@ -1,0 +1,307 @@
+﻿using System;
+using System.ComponentModel;
+using System.Globalization;
+using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using JetBrains.Annotations;
+using AcManager.Tools;
+using AcManager.Tools.Data;
+using AcManager.Tools.Objects;
+using AcTools;
+using AcTools.DataFile;
+using AcTools.Utils;
+using AcTools.Utils.Helpers;
+using AcTools.Utils.Physics;
+using FirstFloor.ModernUI.Helpers;
+using FirstFloor.ModernUI.Presentation;
+
+namespace AcManager.Pages.Dialogs {
+    public sealed partial class CarSpecsEditor : IInvokingNotifyPropertyChanged {
+        public CarObject Car { get; private set; }
+
+        private GraphData _torqueGraph, _powerGraph;
+
+        public GraphData TorqueGraph {
+            get => _torqueGraph;
+            set => this.Apply(value, ref _torqueGraph);
+        }
+
+        public GraphData PowerGraph {
+            get => _powerGraph;
+            set => this.Apply(value, ref _powerGraph);
+        }
+
+        private readonly TextBox[] _fixableInputs;
+
+        public CarSpecsEditor(CarObject car) {
+            _automaticallyRecalculate = ValuesStorage.Get<bool>(AutomaticallyRecalculateKey);
+
+            InitializeComponent();
+            DataContext = this;
+
+            Buttons = new[] {
+                OkButton,
+                CreateExtraDialogButton(AppStrings.CarSpecs_FixFormats, FixValues),
+                CreateExtraDialogButton(AppStrings.CarSpecs_UpdateCurves, UpdateCurves),
+                CancelButton
+            };
+
+            _fixableInputs = new TextBox[] {
+                PowerInput, TorqueInput, WeightInput, AccelerationInput, TopSpeedInput, PwRatioInput
+            };
+
+            foreach (var input in _fixableInputs) {
+                input.PreviewMouseDown += FixableInput_MouseDown;
+            }
+
+            Car = car;
+            TorqueGraph = car.SpecsTorqueCurve;
+            PowerGraph = car.SpecsPowerCurve;
+
+            Closing += CarSpecsEditor_Closing;
+        }
+
+        private static string GetTextBoxMask(FrameworkElement box) {
+            return box.ToolTip as string;
+        }
+
+        private void FixableInput_MouseDown(object sender, MouseButtonEventArgs e) {
+            if (e.ChangedButton != MouseButton.Right || !(sender is TextBox textBox)) return;
+
+            var contextMenu = new ContextMenu();
+            MenuItem item;
+
+            var mask = GetTextBoxMask(textBox);
+            if (mask == null) return;
+
+            if (!Regex.IsMatch(textBox.Text, @"^" + mask.Replace(@"…|\.\.\.", @"-?\d+(?:\.\d+)?") + @"$")) {
+                item = new MenuItem { Header = AppStrings.CarSpecs_FixFormat };
+                item.Click += (s, e1) => FixValue(textBox);
+                item.ToolTip = AppStrings.CarSpecs_FixFormat_Tooltip;
+                contextMenu.Items.Add(item);
+            }
+
+            if (Equals(textBox, WeightInput)) {
+                item = new MenuItem { Header = AppStrings.CarSpecs_Recalculate };
+                item.Click += WeightRecalculate_OnClick;
+                item.ToolTip = AppStrings.CarSpecs_Recalculate_WeightTooltip;
+                contextMenu.Items.Add(item);
+            }
+
+            if (Equals(textBox, PwRatioInput)) {
+                item = new MenuItem { Header = AppStrings.CarSpecs_Recalculate };
+                item.Click += PwRatioRecalculate_OnClick;
+                item.ToolTip = AppStrings.CarSpecs_Recalculate_PwRatioTooltip;
+                contextMenu.Items.Add(item);
+            }
+
+            contextMenu.AddTextBoxItems();
+
+            e.Handled = true;
+            contextMenu.IsOpen = true;
+        }
+
+        private void FixValue(TextBox textBox) {
+            var mask = GetTextBoxMask(textBox);
+            if (mask == null) return;
+
+            var text = textBox.Text;
+            var postfix = "";
+
+            if (ReferenceEquals(textBox, AccelerationInput)) {
+                text = text.Replace(@"0-100", "");
+            } else if (ReferenceEquals(textBox, PowerInput) && (text.IndexOf('*') != -1 || text.IndexOf("whp", StringComparison.OrdinalIgnoreCase) != -1)) {
+                mask = AppStrings.CarSpecs_PowerAtWheels_FormatTooltip;
+            } else if (text.IndexOf('*') != -1) {
+                postfix = "*";
+            }
+
+            if (!FlexibleParser.TryParseDouble(text, out var value)) return;
+            textBox.Text = Format(mask, value.ToString(CultureInfo.InvariantCulture)) + postfix;
+        }
+
+        private void FixValues() {
+            foreach (var input in _fixableInputs) {
+                FixValue(input);
+            }
+        }
+
+        private void UpdateCurves() {
+            var contextMenu = new ContextMenu();
+
+            var item = new MenuItem { Header = AppStrings.CarSpecs_ScaleCurvesToPowerTorqueHeader };
+            item.Click += ScaleCurves;
+            item.ToolTip = AppStrings.CarSpecs_ScaleCurvesToPowerTorque_Tooltip;
+            contextMenu.Items.Add(item);
+
+            item = new MenuItem { Header = AppStrings.CarSpecs_RecalculateCurvesUsingDataAndPowerTorqueHeader };
+            item.Click += RecalculateAndScaleCurves;
+            item.ToolTip = AppStrings.CarSpecs_RecalculateCurvesUsingDataAndPowerTorque_Tooltip;
+            contextMenu.Items.Add(item);
+
+            item = new MenuItem { Header = AppStrings.CarSpecs_RecalculateCurvesUsingDataOnlyHeader };
+            item.Click += RecalculateCurves;
+            item.ToolTip = AppStrings.CarSpecs_RecalculateCurvesUsingDataOnly_Tooltip;
+            contextMenu.Items.Add(item);
+
+            contextMenu.IsOpen = true;
+        }
+
+        private void ScaleCurves(object sender, RoutedEventArgs e) {
+            if (!FlexibleParser.TryParseDouble(PowerInput.Text, out var power) ||
+                    !FlexibleParser.TryParseDouble(TorqueInput.Text, out var torque)) {
+                ShowMessage(AppStrings.CarSpecs_SpecifyPowerAndTorqueFirst, ToolsStrings.Common_CannotDo_Title, MessageBoxButton.OK);
+                return;
+            }
+
+            TorqueGraph = new GraphData(TorqueGraph.ToLut().ScaleTo(torque));
+            PowerGraph = new GraphData(PowerGraph.ToLut().ScaleTo(power));
+        }
+
+        private void RecalculateAndScaleCurves(object sender, RoutedEventArgs e) {
+            if (!FlexibleParser.TryParseDouble(PowerInput.Text, out var maxPower) ||
+                    !FlexibleParser.TryParseDouble(TorqueInput.Text, out var maxTorque)) {
+                NonfatalError.Notify(ToolsStrings.Common_CannotDo_Title, AppStrings.CarSpecs_SpecifyPowerAndTorqueFirst);
+                return;
+            }
+
+            var data = Car.AcdData;
+            if (data == null) {
+                NonfatalError.Notify(ToolsStrings.Common_CannotDo_Title, "Data is damaged");
+                return;
+            }
+
+            Lut torque;
+            try {
+                torque = TorquePhysicUtils.LoadCarTorque(data);
+            } catch (Exception ex) {
+                NonfatalError.Notify(ToolsStrings.Common_CannotDo_Title, ex);
+                return;
+            }
+
+            torque.ScaleToSelf(maxTorque);
+            TorqueGraph = new GraphData(torque);
+
+            torque.TransformSelf(x => x.X * x.Y);
+            torque.ScaleToSelf(maxPower);
+            PowerGraph = new GraphData(torque);
+        }
+
+        private void RecalculateCurves(object sender, RoutedEventArgs e) {
+            var o = Car;
+
+            var data = o.AcdData;
+            if (data == null) {
+                NonfatalError.Notify(ToolsStrings.Common_CannotDo_Title, "Data is damaged");
+                return;
+            }
+
+            Lut torque, power;
+            try {
+                torque = TorquePhysicUtils.LoadCarTorque(data);
+                power = TorquePhysicUtils.TorqueToPower(torque);
+            } catch (Exception ex) {
+                NonfatalError.Notify(ToolsStrings.Common_CannotDo_Title, ex);
+                return;
+            }
+
+            var dlg = new CarTransmissionLossSelector(o, torque.MaxY, power.MaxY);
+            dlg.ShowDialog();
+            if (!dlg.IsResultOk) return;
+
+            torque.TransformSelf(x => x.Y * dlg.Multipler);
+            power.TransformSelf(x => x.Y * dlg.Multipler);
+
+            o.SpecsTorqueCurve = new GraphData(torque);
+            o.SpecsPowerCurve = new GraphData(power);
+
+            if (ShowMessage(AppStrings.CarSpecs_CopyNewPowerAndTorque, AppStrings.Common_OneMoreThing, MessageBoxButton.YesNo, "copyNewPowerAndTorque") ==
+                    MessageBoxResult.Yes) {
+                // MaxY values were updated while creating new GraphData instances above
+                o.SpecsTorque = Format(AppStrings.CarSpecs_Torque_FormatTooltip, torque.MaxY.ToString(@"F0", CultureInfo.InvariantCulture))
+                        + (dlg.Multipler == 1d ? "*" : "");
+                o.SpecsBhp = Format(dlg.Multipler == 1d ? AppStrings.CarSpecs_PowerAtWheels_FormatTooltip : AppStrings.CarSpecs_Power_FormatTooltip,
+                        power.MaxY.ToString(@"F0", CultureInfo.InvariantCulture));
+            }
+        }
+
+        private const string AutomaticallyRecalculateKey = "__carspecseditor_autorecal";
+        private bool _automaticallyRecalculate;
+
+        public bool AutomaticallyRecalculate {
+            get => _automaticallyRecalculate;
+            set {
+                _automaticallyRecalculate = value;
+                ValuesStorage.Set(AutomaticallyRecalculateKey, value);
+            }
+        }
+
+        private void CarSpecsEditor_Closing(object sender, CancelEventArgs e) {
+            if (!IsResultOk) return;
+
+            Car.SpecsBhp = PowerInput.Text;
+            Car.SpecsTorque = TorqueInput.Text;
+            Car.SpecsWeight = WeightInput.Text;
+            Car.SpecsAcceleration = AccelerationInput.Text;
+            Car.SpecsTopSpeed = TopSpeedInput.Text;
+            Car.SpecsPwRatio = PwRatioInput.Text;
+
+            Car.SpecsTorqueCurve = TorqueGraph;
+            Car.SpecsPowerCurve = PowerGraph;
+        }
+
+        private static string Format(string key, object value) {
+            return key.Replace(@"…", value.ToInvariantString()).Replace(@"...", value.ToInvariantString());
+        }
+
+        private void RecalculatePwRatio() {
+            if (!FlexibleParser.TryParseDouble(PowerInput.Text, out var power) ||
+                    !FlexibleParser.TryParseDouble(WeightInput.Text, out var weight)) return;
+
+            var ratio = weight / power;
+            PwRatioInput.Text = Format(AppStrings.CarSpecs_PwRatio_FormatTooltip, ratio.Round(0.01));
+        }
+
+        private void RecalculateWeight() {
+            var data = Car.AcdData;
+            if (data == null) {
+                NonfatalError.Notify(ToolsStrings.Common_CannotDo_Title, "Data is damaged");
+                return;
+            }
+
+            var car = data.GetIniFile("car.ini");
+            WeightInput.Text = Format(AppStrings.CarSpecs_Weight_FormatTooltip,
+                    (car["BASIC"].GetInt("TOTALMASS", CommonAcConsts.DriverWeight) - CommonAcConsts.DriverWeight).ToString(@"F0", CultureInfo.InvariantCulture));
+        }
+
+        private void PwRatioRecalculate_OnClick(object sender, RoutedEventArgs e) {
+            RecalculatePwRatio();
+            e.Handled = true;
+        }
+
+        private void WeightRecalculate_OnClick(object sender, RoutedEventArgs e) {
+            RecalculateWeight();
+            e.Handled = true;
+        }
+
+        private void Pw_OnTextChanged(object sender, TextChangedEventArgs e) {
+            if (AutomaticallyRecalculate) {
+                RecalculatePwRatio();
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null) {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        void IInvokingNotifyPropertyChanged.OnPropertyChanged(string propertyName) {
+            OnPropertyChanged(propertyName);
+        }
+    }
+}

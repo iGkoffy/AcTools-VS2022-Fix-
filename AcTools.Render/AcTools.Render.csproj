@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{841DCDF5-07D3-412A-98AE-4615F1DC5DD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcTools.Render</RootNamespace>
+    <AssemblyName>AcTools.Render</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <FileAlignment>512</FileAlignment>
+    <ActualPlatform>$(Platform)</ActualPlatform>
+    <ActualPlatform Condition="'$(ActualPlatform)' == 'AnyCPU'">x86</ActualPlatform>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Output\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Output\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JetBrains.Annotations, Version=11.1.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325">
+      <HintPath>..\packages\JetBrains.Annotations.11.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Magick.NET-Q8-$(ActualPlatform), Culture=neutral, processorArchitecture=$(ActualPlatform)">
+      <HintPath>..\Libraries\Magick.NET-7.0.4-$(ActualPlatform)\Magick.NET-Q8-$(ActualPlatform).dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NBidi, Culture=neutral">
+      <HintPath>..\Libraries\NBidi\NBidi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\Libraries\Newtonsoft.Json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SlimDX, Culture=neutral, processorArchitecture=$(ActualPlatform)">
+      <HintPath>..\Libraries\SlimDX-$(ActualPlatform)\SlimDX.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Nvidia.TextureTools.Compress, Culture=neutral, processorArchitecture=$(ActualPlatform)">
+      <HintPath>..\Libraries\Nvidia.TextureTools.Compress-$(ActualPlatform)\Nvidia.TextureTools.Compress.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Cameras\AccumulationDofCamera.cs" />
+    <Compile Include="Base\Cameras\FpsCamera.cs" />
+    <Compile Include="Base\Cameras\FrustrumIntersectionType.cs" />
+    <Compile Include="Base\Cameras\Frustum.cs" />
+    <Compile Include="Base\Cameras\ICamera.cs" />
+    <Compile Include="Base\Cameras\InterpolationCamera.cs" />
+    <Compile Include="Base\CommonStates.cs" />
+    <Compile Include="Base\DelegateCommand.cs" />
+    <Compile Include="Base\IDeviceContextHolder.cs" />
+    <Compile Include="Base\Materials\BasicMaterials.cs" />
+    <Compile Include="Base\Materials\IMaterialsFactory.cs" />
+    <Compile Include="Base\Objects\BaseRenderableObject.cs" />
+    <Compile Include="Base\Objects\DebugObject.cs" />
+    <Compile Include="Base\Objects\IRenderableObject.cs" />
+    <Compile Include="Base\Objects\LinesRenderableObject.cs" />
+    <Compile Include="Base\Objects\MaterialObject.cs" />
+    <Compile Include="Base\Objects\MoveableHelper.cs" />
+    <Compile Include="Base\Objects\RenderableList.cs" />
+    <Compile Include="Base\Objects\SpecialRenderMode.cs" />
+    <Compile Include="Base\PostEffects\BlurHelper.cs" />
+    <Compile Include="Base\PostEffects\CopyHelper.cs" />
+    <Compile Include="Base\PostEffects\DownsampleHelper.cs" />
+    <Compile Include="Base\PostEffects\Fxaa311Helper.cs" />
+    <Compile Include="Base\PostEffects\FxaaHelper.cs" />
+    <Compile Include="Base\PostEffects\HdrHelper.cs" />
+    <Compile Include="Base\PostEffects\IRenderHelper.cs" />
+    <Compile Include="Base\PostEffects\SmaaHelper.cs" />
+    <Compile Include="Base\Reflections\LightProbe.cs" />
+    <Compile Include="Base\RendererClock.cs" />
+    <Compile Include="Base\RendererShotFormat.cs" />
+    <Compile Include="Base\RendererStopwatch.cs" />
+    <Compile Include="Base\Shaders\EffectOnlyMatrixVariable.cs" />
+    <Compile Include="Base\Shaders\EffectReadyTechnique.cs" />
+    <Compile Include="Base\Shadows\ShadowsBase.cs" />
+    <Compile Include="Base\Shadows\ShadowsPointFlat.cs" />
+    <Compile Include="Base\Shadows\ShadowsSpot.cs" />
+    <Compile Include="Base\Utils\ColorGradingConverter.cs" />
+    <Compile Include="Base\Utils\UniformPoissonDiskSampler.cs" />
+    <Compile Include="Data\CarSuspensionModifiers.cs" />
+    <Compile Include="Data\IniExtension.cs" />
+    <Compile Include="Forward\ToneMappingFn.cs" />
+    <Compile Include="Base\PostEffects\AO\AoHelperBase.cs" />
+    <Compile Include="Kn5SpecificForwardDark\AoType.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkDof.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkKn5ObjectRenderer.AccumulationDof.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkKn5ObjectRenderer.Interface.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkKn5ObjectRenderer.Lights.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkKn5ObjectRenderer.DebugMode.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkKn5ObjectRenderer.Properties.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkKn5ObjectRenderer.SplitShot.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkKn5ObjectRenderer.UserInput.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkPreviewsAcUpdater.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkPreviewsOptions.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkPreviewsUpdaterFactory.cs" />
+    <Compile Include="Kn5SpecificForwardDark\IDarkPreviewsUpdater.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkAreaLightBase.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkLtcPlaneLight.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkAreaTubeLight.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkDirectionalLight.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkLightBase.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkSslr.cs" />
+    <Compile Include="Base\Reflections\IReflectionDraw.cs" />
+    <Compile Include="Base\Reflections\ReflectionCubemap.cs" />
+    <Compile Include="Base\SceneRenderer.cs" />
+    <Compile Include="Base\BaseRenderer.cs" />
+    <Compile Include="Base\Cameras\CameraBase.cs" />
+    <Compile Include="Base\Cameras\CameraOrbit.cs" />
+    <Compile Include="Base\Cameras\CameraOrtho.cs" />
+    <Compile Include="Base\Objects\TrianglesRenderableObject.cs" />
+    <Compile Include="Base\DeviceContextHolder.cs" />
+    <Compile Include="Base\Shaders\EffectUtils.cs" />
+    <Compile Include="Base\Shaders\IEffectMatricesWrapper.cs" />
+    <Compile Include="Base\Shaders\IEffectScreenSizeWrapper.cs" />
+    <Compile Include="Base\Shaders\IEffectWrapper.cs" />
+    <Compile Include="Base\Shaders\IFxMatrixVariable.cs" />
+    <Compile Include="Base\Sprites\CharRenderCall.cs" />
+    <Compile Include="Base\Sprites\Helpers.cs" />
+    <Compile Include="Base\Sprites\VerticeSpriteSpecific.cs" />
+    <Compile Include="Base\Sprites\SpriteRenderer.cs" />
+    <Compile Include="Base\Sprites\StringMetrics.cs" />
+    <Compile Include="Base\Sprites\Structs.cs" />
+    <Compile Include="Base\Sprites\TextBlockRenderer.cs" />
+    <Compile Include="Base\Utils\ThreadPool.cs" />
+    <Compile Include="Data\CarData.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkKn5ObjectRenderer.cs" />
+    <Compile Include="Kn5SpecificForwardDark\DarkPreviewsUpdater.cs" />
+    <Compile Include="Base\Objects\DebugLinesObject.cs" />
+    <Compile Include="Kn5SpecificForwardDark\FlatMirror.cs" />
+    <Compile Include="Base\PostEffects\AO\HbaoHelper.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkAreaSphereLight.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkPlaneLight.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkPointLight.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Lights\DarkSpotLight.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\AmbientShadowMaterialSimple.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\DarkMaterialsParams.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\DebugColliderMaterial.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\DebugLinesMaterial.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\DebugMaterial.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDark.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkAlpha.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkAtNm.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkBase.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkTyres.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkGl.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkMaps.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkMirror.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkNm.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkNmMult.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkReflective.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkSky.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\Kn5MaterialDarkWindscreen.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\GenericMaterialDark.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\MaterialsProviderDark.cs" />
+    <Compile Include="Base\PostEffects\AO\SsaoHelper.cs" />
+    <Compile Include="Base\PostEffects\AO\SsaoAltHelper.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\TesselationMode.cs" />
+    <Compile Include="Kn5SpecificForwardDark\Materials\WireframeMode.cs" />
+    <Compile Include="Kn5SpecificForward\ForwardKn5ObjectRenderer.CarSlot.cs" />
+    <Compile Include="Kn5SpecificForward\ForwardKn5ObjectRenderer.Movement.cs" />
+    <Compile Include="Kn5SpecificForward\IPaintShopRenderer.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopAlignment.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopFontSource.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopPatternColorReference.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopPatternDecal.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopPatternFlag.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopPatternLabel.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopPatternNumber.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopPatternPiece.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopSource.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopSourceChannel.cs" />
+    <Compile Include="Kn5SpecificForward\PaintShopSourceParams.cs" />
+    <Compile Include="Kn5SpecificForward\ToolsKn5ObjectRenderer.Camera.cs" />
+    <Compile Include="Kn5SpecificForward\ToolsKn5ObjectRenderer.Textures.cs" />
+    <Compile Include="Kn5SpecificForward\ToolsKn5ObjectRenderer.PaintShop.cs" />
+    <Compile Include="Kn5SpecificSpecial\AiLaneObject.cs" />
+    <Compile Include="Kn5SpecificSpecial\BakedShadowsRenderer.cs" />
+    <Compile Include="Kn5SpecificSpecial\DepthMaterialsFactory.cs" />
+    <Compile Include="Kn5SpecificSpecial\Kn5MaterialTrackMap.cs" />
+    <Compile Include="Kn5SpecificSpecial\ShadowsRendererBase.cs" />
+    <Compile Include="Kn5SpecificSpecial\TrackMapBlurRenderHelper.cs" />
+    <Compile Include="Kn5SpecificSpecial\TrackMapMaterialsFactory.cs" />
+    <Compile Include="Kn5SpecificSpecial\TrackMapRenderHelper.cs" />
+    <Compile Include="Kn5SpecificSpecial\TrackOutlineRenderer.cs" />
+    <Compile Include="Kn5SpecificSpecial\UtilsRendererBase.cs" />
+    <Compile Include="Kn5Specific\Animations\KsAnimExtension.cs" />
+    <Compile Include="Kn5Specific\Animations\KsAnimAnimator.cs" />
+    <Compile Include="Kn5Specific\IAcCarSoundFactory.cs" />
+    <Compile Include="Kn5Specific\Materials\Kn5AmbientShadowMaterialDescription.cs" />
+    <Compile Include="Kn5Specific\Materials\Kn5MaterialDescription.cs" />
+    <Compile Include="Kn5Specific\Materials\Kn5SharedMaterials.cs" />
+    <Compile Include="Kn5Specific\Objects\AcDynamicMaterialParams.cs" />
+    <Compile Include="Kn5Specific\Objects\CarDescription.cs" />
+    <Compile Include="Kn5Specific\Objects\ExtraModels.cs" />
+    <Compile Include="Kn5Specific\Objects\IExtraModelProvider.cs" />
+    <Compile Include="Kn5Specific\Objects\IKn5RenderableObject.cs" />
+    <Compile Include="Kn5Specific\Objects\IKn5ToRenderableConverter.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.AmbientShadows.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.Cameras.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.DriverCrew.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.Lights.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.LiveReload.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.Movement.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.PaintShop.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.Wheels.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.Lines.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.Utils.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCar.Sound.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableCollider.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableDriver.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableShowroom.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableSkinnable.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5SkinnedObject.cs" />
+    <Compile Include="Kn5Specific\Objects\SmoothEmissiveChange.cs" />
+    <Compile Include="Kn5Specific\Objects\Up.cs" />
+    <Compile Include="Kn5Specific\Textures\DirectoryTexturesProvider.cs" />
+    <Compile Include="Kn5Specific\Textures\ITexturesProvider.cs" />
+    <Compile Include="Kn5Specific\Textures\Kn5TexturesProvider.cs" />
+    <Compile Include="Kn5Specific\Textures\MultiKn5TexturesProvider.cs" />
+    <Compile Include="Kn5Specific\Textures\TexturesProviderBase.cs" />
+    <Compile Include="Base\QuadBuffers.cs" />
+    <Compile Include="Base\Shadows\IShadowsDraw.cs" />
+    <Compile Include="Base\Shadows\ShadowsDirectional.cs" />
+    <Compile Include="Base\Shadows\ShadowsPoint.cs" />
+    <Compile Include="Base\Structs\InputLayouts.cs" />
+    <Compile Include="Base\TargetTextures\BaseTargetResourceTexture.cs" />
+    <Compile Include="Base\TargetTextures\TargetResourceDepthTexture.cs" />
+    <Compile Include="Base\TargetTextures\TargetResourceTexture.cs" />
+    <Compile Include="Base\TickEventArgs.cs" />
+    <Compile Include="Base\TickEventHandler.cs" />
+    <Compile Include="Base\Utils\FrameMonitor.cs" />
+    <Compile Include="Base\Utils\GeometryGenerator.cs" />
+    <Compile Include="Base\Utils\MathF.cs" />
+    <Compile Include="Base\Utils\MathF_CosTable.cs" />
+    <Compile Include="Base\Utils\SlimDxExtension.cs" />
+    <Compile Include="Base\Utils\TextureReader.cs" />
+    <Compile Include="Forward\ForwardRenderer.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleAlpha.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleNmMult.cs" />
+    <Compile Include="Kn5SpecificForward\ToolsKn5ObjectRenderer.cs" />
+    <Compile Include="Kn5SpecificSpecial\TrackMapRenderer.cs" />
+    <Compile Include="Kn5SpecificSpecial\UvRenderer.cs" />
+    <Compile Include="Kn5SpecificSpecial\AmbientShadowRenderer.cs" />
+    <Compile Include="Kn5Specific\IKn5ObjectRenderer.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleAtNm.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleBase.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleDiffMaps.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleGl.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleMaps.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleNm.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleReflective.cs" />
+    <Compile Include="Kn5Specific\Materials\Kn5MaterialExtension.cs" />
+    <Compile Include="Kn5Specific\Objects\RenderableListExtension.cs" />
+    <Compile Include="Kn5Specific\Textures\IOverridedTextureProvider.cs" />
+    <Compile Include="Base\Utils\TaskExtension.cs" />
+    <Compile Include="Kn5SpecificForward\ForwardKn5ObjectRenderer.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\AmbientShadowMaterialSimple.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimpleMirror.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\Kn5MaterialSimple.cs" />
+    <Compile Include="Kn5SpecificForward\Materials\MaterialsProviderSimple.cs" />
+    <Compile Include="Kn5Specific\Materials\IObjectMaterialDeferred.cs" />
+    <Compile Include="Base\Materials\InvisibleMaterial.cs" />
+    <Compile Include="Base\Materials\IRenderableMaterial.cs" />
+    <Compile Include="Base\Materials\SharedMaterials.cs" />
+    <Compile Include="Kn5Specific\Objects\AmbientShadow.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableList.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableObject.cs" />
+    <Compile Include="Kn5Specific\Objects\SkyObject.cs" />
+    <Compile Include="Kn5Specific\Textures\RenderableTexture.cs" />
+    <Compile Include="Kn5Specific\Textures\IRenderableTexture.cs" />
+    <Compile Include="Kn5Specific\Textures\Kn5OverrideableTexturesProvider.cs" />
+    <Compile Include="Kn5Specific\Utils\CarLight.cs" />
+    <Compile Include="Kn5Specific\Objects\Kn5RenderableFile.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shaders\Shaders.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shaders.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SmaaResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmaaResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Special\PiecesBlender.cs" />
+    <Compile Include="Temporary\TestingCube.cs" />
+    <Compile Include="Temporary\TestingCubeRendererUsingEffect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\DdsEncoder.cs" />
+    <Compile Include="Utils\MatrixFix.cs" />
+    <Compile Include="Utils\OpenExrEncoder.cs" />
+    <Compile Include="Utils\PreferredDdsFormat.cs" />
+    <Compile Include="Utils\PreferredDdsFormatExtension.cs" />
+    <Compile Include="Wrapper\BaseKn5FormWrapper.cs" />
+    <Compile Include="Wrapper\FormWrapperBase.cs" />
+    <Compile Include="Wrapper\FormWrapperMouseBase.cs" />
+    <Compile Include="Wrapper\Kn5WrapperCameraControlHelper.cs" />
+    <Compile Include="Wrapper\LiteShowroomFormWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcTools.ExtraKn5Utils\AcTools.ExtraKn5Utils.csproj">
+      <Project>{67729c43-6e5f-482a-8777-1651ea1aa393}</Project>
+      <Name>AcTools.ExtraKn5Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AcTools\AcTools.csproj">
+      <Project>{55b65fb4-92cb-42ef-b4bf-f287810986e1}</Project>
+      <Name>AcTools</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\SearchTex.dds" />
+    <None Include="Resources\AreaTexDX10.dds" />
+    <Content Include="Resources\Bokeh.dds" />
+    <Content Include="Resources\LtcAmp.dds" />
+    <Content Include="Resources\LtcMat.dds" />
+    <Content Include="Shaders\Dark\DarkMaterial.NoAreaLights.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.FewerExtraShadows.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.FewerExtraShadowsNoPCSS.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.NoExtraShadows.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.SimpleNoPCSS.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.Simple.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.NoPCSS.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.WithoutLighting.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Base.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.GPass.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Kunos.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Lighting.Complex.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Lighting.Complex.Area.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Lighting.Complex.Placeholder.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Lighting.None.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Tesselation.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Unpack.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Reflection.fx" />
+    <Content Include="Shaders\Includes\DarkMaterial.Lighting.Simple.fx" />
+    <Content Include="Shaders\Includes\ASSAO.fx" />
+    <Content Include="Shaders\Includes\HBAO.Found.fx" />
+    <None Include="Shaders\Includes\FXAA.311.fx.off" />
+    <Content Include="Shaders\Includes\FXAA.fx" />
+    <Content Include="Shaders\Includes\Shadows.fx" />
+    <Content Include="Shaders\Includes\Shadows.PCSS.fx" />
+    <Content Include="Shaders\Includes\SMAA.fx" />
+    <Content Include="Shaders\PpAo\PpAoBlur.fx" />
+    <Content Include="Shaders\Pp\PpDof.fx" />
+    <Content Include="Shaders\Pp\PpDarkSslr.fx" />
+    <Content Include="Shaders\Pp\PpDownsample.fx" />
+    <Content Include="Shaders\Pp\PpLensFlares.fx" />
+    <Content Include="Shaders\Pp\PpOutline.fx" />
+    <None Include="Shaders\Pp\PpSmaa.fx.off" />
+    <Content Include="Shaders\Pp\PpBlur.fx" />
+    <Content Include="Shaders\Pp\PpHdr.fx" />
+    <Content Include="Shaders\PpAo\PpHbao.fx" />
+    <Content Include="Shaders\PpAo\PpSsaoAlt.fx" />
+    <Content Include="Shaders\PpAo\PpSsao.fx" />
+    <Content Include="Shaders\Forward\KunosShader.fx" />
+    <Content Include="Shaders\Pp\PpBasic.fx" />
+    <Content Include="Shaders\Dark\DarkMaterial.SimpleNoShadows.fx" />
+    <Content Include="Shaders\Simple\SimpleMaterial.fx" />
+    <Content Include="Shaders\PpAo\PpAmbientShadows.fx" />
+    <Content Include="Shaders\Special\SpecialAreaLights.fx" />
+    <Content Include="Shaders\Special\SpecialDebugReflections.fx" />
+    <Content Include="Shaders\Special\SpecialPaintShop.fx" />
+    <Content Include="Shaders\Special\SpecialPiecesBlender.fx" />
+    <Content Include="Shaders\Special\SpecialRandom.fx" />
+    <Content Include="Shaders\Special\SpecialShadow.fx" />
+    <Content Include="Shaders\Special\SpecialDebugLines.fx" />
+    <Content Include="Shaders\Special\SpecialTrackOutline.fx" />
+    <Content Include="Shaders\Sprites\SpriteShader.fx" />
+    <Content Include="Shaders\Testing\TestingPnt.fx" />
+    <Content Include="Shaders\Testing\TestingCube.fx" />
+    <Content Include="Shaders\Special\SpecialUv.fx" />
+    <Content Include="Shaders\Special\SpecialTrackMap.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Shaders.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Shaders.cs</LastGenOutput>
+    </None>
+    <Content Include="Shaders\Includes\Common.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shaders.resources" />
+    <None Include="SmaaResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SmaaResources.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <TemplatesToUpdate>~/bin/t4auto Shaders/Shaders.tt Shaders/*(F)</TemplatesToUpdate>
+  </PropertyGroup>
+  <Import Project="..\Libraries\PreBuildEvents.Templates.props" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

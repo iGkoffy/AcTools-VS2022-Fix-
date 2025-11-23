@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EFB040E-3114-4DF6-AD0E-D86AB59B5D85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcTools.LapTimes.LevelDb</RootNamespace>
+    <AssemblyName>AcTools.LapTimes.LevelDb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNSAFE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;UNSAFE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNSAFE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;UNSAFE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcLapTimesReader.cs" />
+    <Compile Include="ChromiumDbWrapper.cs" />
+    <Compile Include="LevelDbUtils\Cache.cs" />
+    <Compile Include="LevelDbUtils\Comparator.cs" />
+    <Compile Include="LevelDbUtils\CompressionLevel.cs" />
+    <Compile Include="LevelDbUtils\Env.cs" />
+    <Compile Include="LevelDbUtils\Iterator.cs" />
+    <Compile Include="LevelDbUtils\LevelDb.cs" />
+    <Compile Include="LevelDbUtils\LevelDbExtensions.cs" />
+    <Compile Include="LevelDbUtils\LevelDbFreeHandle.cs" />
+    <Compile Include="LevelDbUtils\LevelDbHandle.cs" />
+    <Compile Include="LevelDbUtils\LevelDbInterop.cs" />
+    <Compile Include="LevelDbUtils\NativePointer.cs" />
+    <Compile Include="LevelDbUtils\Options.cs" />
+    <Compile Include="LevelDbUtils\PinnedSafeHandle.cs" />
+    <Compile Include="LevelDbUtils\ReadOptions.cs" />
+    <Compile Include="LevelDbUtils\SnapShot.cs" />
+    <Compile Include="LevelDbUtils\WriteBatch.cs" />
+    <Compile Include="LevelDbUtils\WriteOptions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcTools.LapTimes\AcTools.LapTimes.csproj">
+      <Project>{38A04388-FC0C-4E96-BED5-1DC5C6C0B18F}</Project>
+      <Name>AcTools.LapTimes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AcTools\AcTools.csproj">
+      <Project>{55B65FB4-92CB-42EF-B4BF-F287810986E1}</Project>
+      <Name>AcTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\Libraries\PreBuildEvents.props" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

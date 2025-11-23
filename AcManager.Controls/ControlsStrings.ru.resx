@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="KunosCareer_RequiredSeries" xml:space="preserve">
+    <value>Требуется пройти: {0}</value>
+  </data>
+  <data name="KunosCareer_RequiredSeriesAreNotFinishedYet" xml:space="preserve">
+    <value>Требуемые серии пока не пройдены</value>
+  </data>
+  <data name="KunosCareer_CompletedLabel" xml:space="preserve">
+    <value>Завершено: </value>
+    <comment>Don’t forget about space at the end!</comment>
+  </data>
+  <data name="KunosCareer_Error" xml:space="preserve">
+    <value>{0} ошибка</value>
+    <comment>Will be pluralized automatically</comment>
+  </data>
+  <data name="AcObject_ErrorsHeader" xml:space="preserve">
+    <value>{Ошибка}:</value>
+  <alternative>{!Ошибка}:</alternative></data>
+  <data name="AcObject_TrackGeoTagsLabel" xml:space="preserve">
+    <value>Координаты:</value>
+  </data>
+  <data name="AcObject_CityLabel" xml:space="preserve">
+    <value>Город</value>
+  </data>
+  <data name="Assists_Header" xml:space="preserve">
+    <value>Помощники:</value>
+  </data>
+  <data name="Assists_AutoShifterLabel" xml:space="preserve">
+    <value>Авто-переключение:</value>
+  <alternative>АКПП:</alternative></data>
+  <data name="Assists_AutoClutchLabel" xml:space="preserve">
+    <value>Авто-сцепление:</value>
+  </data>
+  <data name="Assists_AutoBlipLabel" xml:space="preserve">
+    <value>Авто-перегазовка:</value>
+  <alternative>Авто-блип:</alternative></data>
+  <data name="Assists_StabilityControlLabel" xml:space="preserve">
+    <value>Стабилизация:</value>
+  </data>
+  <data name="Assists_FuelLabel" xml:space="preserve">
+    <value>Расход топлива:</value>
+  </data>
+  <data name="Assists_TyreWearLabel" xml:space="preserve">
+    <value>Износ шин:</value>
+  </data>
+  <data name="WebBrowser_Prompt" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="AcObject_CarBrandLabel" xml:space="preserve">
+    <value>Марка:</value>
+  <alternative>Бренд:</alternative></data>
+  <data name="AcObject_ContryLabel" xml:space="preserve">
+    <value>Страна:</value>
+  </data>
+  <data name="AcObject_CarClassLabel" xml:space="preserve">
+    <value>Класс:</value>
+  </data>
+  <data name="AcObject_YearLabel" xml:space="preserve">
+    <value>Год:</value>
+  </data>
+  <data name="AcObject_CarParentLabel" xml:space="preserve">
+    <value>Базовая:</value>
+  </data>
+  <data name="AcObject_SpecsLabel" xml:space="preserve">
+    <value>Параметры:</value>
+  </data>
+  <data name="Car_OpenInShowroom" xml:space="preserve">
+    <value>Открыть в демонстрационном зале</value>
+  <alternative>Открыть в шоуруме</alternative></data>
+  <data name="Common_Presets" xml:space="preserve">
+    <value>Предустановки</value>
+  <alternative>Пресеты</alternative></data>
+  <data name="Common_Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Car_OpenInCustomShowroom" xml:space="preserve">
+    <value>Открыть в пользовательском шоуруме</value>
+  <alternative>Открыть в пользовательском демонстрационном зале</alternative><alternative>Открыть в кастомном шоуруме</alternative><alternative>Открыть в пользовательском выставочном зале</alternative></data>
+  <data name="Video_CannotPlay" xml:space="preserve">
+    <value>Невозможно проиграть видео</value>
+  <alternative>Не получится проиграть видео</alternative></data>
+  <data name="Video_CannotPlay_Commentary" xml:space="preserve">
+    <value>Пожалуйста, зайдите в настройки и включите VLC-плагин</value>
+  </data>
+  <data name="Common_FilterLabel" xml:space="preserve">
+    <value>Фильтр:</value>
+  </data>
+  <data name="Presets_Save" xml:space="preserve">
+    <value>Сохранить предустановку</value>
+  <alternative>Сохранить пресет</alternative></data>
+  <data name="Presets_Save_Tooltip" xml:space="preserve">
+    <value>Сохранить текущие параметры как предустановку</value>
+  <alternative>Сохранить текущие параметры как пресет</alternative></data>
+  <data name="Presets_Unsaved" xml:space="preserve">
+    <value>Не сохранено</value>
+  </data>
+  <data name="Controls_SteeringWheelButton" xml:space="preserve">
+    <value>Кнопка на руле</value>
+  </data>
+  <data name="AssistsPreset_Gamer" xml:space="preserve">
+    <value>Геймер</value>
+  <alternative>Игрок</alternative></data>
+  <data name="AssistsPreset_Intermediate" xml:space="preserve">
+    <value>Опытный</value>
+  </data>
+  <data name="AssistsPreset_Pro" xml:space="preserve">
+    <value>Про</value>
+  </data>
+  <data name="AcObject_AuthorLabel" xml:space="preserve">
+    <value>Автор:</value>
+  </data>
+  <data name="Common_Clear" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="AcObject_VersionLabel" xml:space="preserve">
+    <value>Версия:</value>
+  </data>
+  <data name="AcObject_UrlLabel" xml:space="preserve">
+    <value>Веб-страница:</value>
+  </data>
+  <data name="Common_MetersPostfix" xml:space="preserve">
+    <value> м</value>
+  </data>
+  <data name="Common_DevTools" xml:space="preserve">
+    <value>Для разработки</value>
+  </data>
+  <data name="Common_Unpack" xml:space="preserve">
+    <value>Распаковать {0}</value>
+  </data>
+  <data name="AcObject_Author_Tooltip" xml:space="preserve">
+    <value>Автор, версия и веб-адрес:</value>
+  </data>
+  <data name="QuickSwitches_HideWheel" xml:space="preserve">
+    <value>Без руля</value>
+  </data>
+  <data name="QuickSwitches_HideWheel_Tooltip" xml:space="preserve">
+    <value>Скрыть руль</value>
+  </data>
+  <data name="QuickSwitches_LockWheel" xml:space="preserve">
+    <value>Прив. руль</value>
+  </data>
+  <data name="QuickSwitches_LockCamera" xml:space="preserve">
+    <value>Прив. камеру</value>
+  </data>
+  <data name="QuickSwitches_Mirror" xml:space="preserve">
+    <value>Зеркало</value>
+  </data>
+  <data name="QuickSwitches_Names" xml:space="preserve">
+    <value>Имена</value>
+  </data>
+  <data name="QuickSwitches_Leaderboard" xml:space="preserve">
+    <value>Лидеры</value>
+  </data>
+  <data name="QuickSwitches_DamageUi" xml:space="preserve">
+    <value>Урон (UI)</value>
+  </data>
+  <data name="QuickSwitches_Header" xml:space="preserve">
+    <value>Переключатели</value>
+  </data>
+  <data name="QuickSwitches_Nearest" xml:space="preserve">
+    <value>Ближайшие</value>
+  </data>
+  <data name="QuickSwitches_Fullscreen" xml:space="preserve">
+    <value>На весь экран</value>
+  </data>
+  <data name="QuickSwitches_DevApps" xml:space="preserve">
+    <value>Разработка</value>
+  </data>
+  <data name="QuickSwitches_FreeCamera" xml:space="preserve">
+    <value>Своб. камера</value>
+  </data>
+  <data name="QuickSwitches_OnlineName" xml:space="preserve">
+    <value>Онлайн-имя</value>
+  </data>
+  <data name="QuickSwitches_Exposure" xml:space="preserve">
+    <value>Яркость</value>
+  </data>
+  <data name="QuickSwitches_Fov" xml:space="preserve">
+    <value>Угол зрения</value>
+  </data>
+  <data name="QuickSwitches_LockWheel_Tooltip" xml:space="preserve">
+    <value>Зафиксировать руль</value>
+  <alternative>Привязать рулевое колесо</alternative></data>
+  <data name="QuickSwitches_LockCamera_Tooltip" xml:space="preserve">
+    <value>Привязать камеру к горизонту</value>
+  </data>
+  <data name="QuickSwitches_Mirror_Tooltip" xml:space="preserve">
+    <value>Включить виртуальное зеркало</value>
+  </data>
+  <data name="QuickSwitches_Names_Tooltip" xml:space="preserve">
+    <value>Показывать имена водителей</value>
+  </data>
+  <data name="QuickSwitches_Leaderboard_Tooltip" xml:space="preserve">
+    <value>Показывать список лидеров</value>
+  </data>
+  <data name="QuickSwitches_DamageUi_Tooltip" xml:space="preserve">
+    <value>Показывать урон</value>
+  </data>
+  <data name="QuickSwitches_Fullscreen_Tooltip" xml:space="preserve">
+    <value>Полноэкранный режим</value>
+  </data>
+  <data name="QuickSwitches_DevApps_Tooltip" xml:space="preserve">
+    <value>Включить приложения разработчика</value>
+  </data>
+  <data name="QuickSwitches_FreeCamera_Tooltip" xml:space="preserve">
+    <value>Включить свободную камеру</value>
+  </data>
+  <data name="QuickSwitches_OnlineName_Tooltip" xml:space="preserve">
+    <value>Использовать специальное имя для режима "Интернет"</value>
+  <alternative>Использовать специальное имя для онлайна</alternative></data>
+  <data name="QuickSwitches_UiPresets_Tooltip" xml:space="preserve">
+    <value>Сменить предустановки интерфейса</value>
+  <alternative>Сменить UI-пресет</alternative></data>
+  <data name="QuickSwitches_ControlsPresets_Tooltip" xml:space="preserve">
+    <value>Сменить предустановки управления</value>
+  <alternative>Сменить пресет с управлением</alternative></data>
+  <data name="QuickSwitches_VideoPresets_Tooltip" xml:space="preserve">
+    <value>Сменить предустановки графики</value>
+  <alternative>Сменить пресет с графикой</alternative></data>
+  <data name="QuickSwitches_PpFilters_Tooltip" xml:space="preserve">
+    <value>Сменить фильтр</value>
+  </data>
+  <data name="QuickSwitches_Exposure_Tooltip" xml:space="preserve">
+    <value>Яркость</value>
+  </data>
+  <data name="QuickSwitches_Fov_Tooltip" xml:space="preserve">
+    <value>Поле зрения (по вертикали)</value>
+  <alternative>Угол зрения (по вертикали)</alternative></data>
+  <data name="QuickSwitches_HideArms" xml:space="preserve">
+    <value>Скрыть руки</value>
+  </data>
+  <data name="QuickSwitches_HideArms_Tooltip" xml:space="preserve">
+    <value>Скрыть руки водителя</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Тёмная</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Светлая</value>
+  </data>
+  <data name="Animation_Modern" xml:space="preserve">
+    <value>Современная</value>
+  </data>
+  <data name="Animation_Fade" xml:space="preserve">
+    <value>Затухание</value>
+  </data>
+  <data name="Animation_Up" xml:space="preserve">
+    <value>Вверх</value>
+  </data>
+  <data name="Animation_Down" xml:space="preserve">
+    <value>Вниз</value>
+  </data>
+  <data name="Common_AreYouSure" xml:space="preserve">
+    <value>Вы уверены?</value>
+  </data>
+  <data name="Controls_BuiltInPresets" xml:space="preserve">
+    <value>Встроенные предустановки</value>
+  <alternative>Встроенные пресеты</alternative></data>
+  <data name="Controls_UserPresets" xml:space="preserve">
+    <value>Пользовательские предустановки</value>
+  <alternative>Пользовательские пресеты</alternative></data>
+  <data name="Share_EnterNameHeader" xml:space="preserve">
+    <value>Поделиться как</value>
+  <alternative>Расшарить как</alternative></data>
+  <data name="ImageViewer_DefaultName" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="ImageViewer_Save_Title" xml:space="preserve">
+    <value>Сохранить изображение как</value>
+  </data>
+  <data name="Showroom_FovLabel" xml:space="preserve">
+    <value>Угол зрения:</value>
+  </data>
+  <data name="Common_MillisecondsPostfix" xml:space="preserve">
+    <value> мс</value>
+  </data>
+  <data name="Online_PasswordRequired" xml:space="preserve">
+    <value>Требуется пароль</value>
+  </data>
+  <data name="Common_Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Common_FolderExists" xml:space="preserve">
+    <value>Каталог «{0}» уже существует. Перезаписать файлы?</value>
+  <alternative>Папка «{0}» уже существует. Перезаписать файлы?</alternative></data>
+  <data name="Common_GoodNews" xml:space="preserve">
+    <value>Хорошие новости!</value>
+  </data>
+  <data name="Common_Loading" xml:space="preserve">
+    <value>Загрузка…</value>
+  </data>
+  <data name="Controls_FilterAxis" xml:space="preserve">
+    <value>Фильтрация</value>
+  </data>
+  <data name="Controls_GammaAxis" xml:space="preserve">
+    <value>Нелинейность</value>
+  <alternative>Гамма</alternative></data>
+  <data name="Controls_InvertAxis" xml:space="preserve">
+    <value>Инвертировать</value>
+  <alternative>Развернуть</alternative></data>
+  <data name="Controls_Preview_Device" xml:space="preserve">
+    <value>Устройство: [b]{0}[/b]</value>
+  </data>
+  <data name="Controls_Preview_Devices" xml:space="preserve">
+    <value>Устройства: [b]{0}[/b]</value>
+  </data>
+  <data name="Controls_Preview_InputMethod" xml:space="preserve">
+    <value>Метод ввода: [b]{0}[/b]</value>
+  <alternative>Тип: [b]{0}[/b]</alternative></data>
+  <data name="Controls_RangeFromAxis" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="Controls_RangeToAxis" xml:space="preserve">
+    <value>До</value>
+  </data>
+  <data name="Common_Options" xml:space="preserve">
+		<value>Параметры</value>
+	</data>
+  <data name="Common_Preparing" xml:space="preserve">
+    <value>Подготовка…</value>
+  </data>
+  <data name="Assists_IdealLineLabel" xml:space="preserve">
+    <value>Траектория:</value>
+  </data>
+  <data name="Common_Compressing" xml:space="preserve">
+    <value>Сжатие…</value>
+  </data>
+  <data name="Common_OpponentsFormat" xml:space="preserve">
+    <value>{0} соперник</value>
+  <alternative>{0} оппонент</alternative><alternative>{0} соперников</alternative></data>
+  <data name="Common_Reset" xml:space="preserve">
+    <value>Сбросить</value>
+  </data>
+  <data name="Common_MinutesPostfix" xml:space="preserve">
+    <value> мин</value>
+  </data>
+  <data name="Controls_WaitingForInput" xml:space="preserve">
+    <value>Ожидание ввода</value>
+  <alternative>Ожидание</alternative></data>
+  <data name="Common_MinutePostfix" xml:space="preserve">
+    <value> минута</value>
+  </data>
+  <data name="Common_LapsPostfix" xml:space="preserve">
+    <value> круг</value>
+  </data>
+  <data name="Common_Installing" xml:space="preserve">
+    <value>Установка…</value>
+  </data>
+  <data name="Common_SecondsPostfix" xml:space="preserve">
+    <value> сек</value>
+  <alternative> с</alternative></data>
+  <data name="Common_Change" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="Common_ChangeSkin" xml:space="preserve">
+    <value>Сменить раскраску</value>
+  <alternative>Сменить скин</alternative></data>
+  <data name="Common_OpponentsPostfix" xml:space="preserve">
+    <value> соперник</value>
+  <alternative> оппонент</alternative></data>
+  <data name="Common_TryAgain" xml:space="preserve">
+    <value>Ещё раз</value>
+  </data>
+  <data name="Common_OfflineMode" xml:space="preserve">
+    <value>Офлайн</value>
+  </data>
+  <data name="Common_Generic" xml:space="preserve">
+    <value>Общее</value>
+  </data>
+  <data name="Common_Downloading" xml:space="preserve">
+    <value>Скачивание…</value>
+  </data>
+  <data name="Replay_CrMessage" xml:space="preserve">
+    <value>Повтор будет перезаписан после следующей гонки. Переименуйте его, чтобы сохранить.</value>
+  </data>
+  <data name="Replay_CrMessage_Commentary" xml:space="preserve">
+    <value>Вы можете перейти в настройки и включить опцию "Сохранять повторы автоматически", чтобы не потерять что-то ценное.</value>
+  </data>
+  <data name="VideoViewer_CannotPlay" xml:space="preserve">
+    <value>Невозможно проиграть видео</value>
+  <alternative>Не получится проиграть видео</alternative></data>
+  <data name="CustomShowroom_TextureSizeLabel" xml:space="preserve">
+    <value>Размер:</value>
+  </data>
+  <data name="CustomShowroom_Selected_NameLabel" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadowsSize_Reset" xml:space="preserve">
+    <value>Сбросить</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadowsSize_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="AcObject_FuelLabel" xml:space="preserve">
+    <value>Расход топлива:</value>
+  </data>
+  <data name="Showroom_DialogHeader" xml:space="preserve">
+    <value>Шоурум</value>
+  <alternative>Выставочный зал</alternative></data>
+  <data name="Common_ExposureLabel" xml:space="preserve">
+    <value>Экспозиция:</value>
+  </data>
+  <data name="Controls_ClickToAssign" xml:space="preserve">
+    <value>Нажмите чтобы назначить</value>
+  </data>
+  <data name="Controls_DamperGain_Tooltip" xml:space="preserve">
+    <value>Установите 0 для Logitech G920, для всех остальных оставьте 1</value>
+  <alternative>Установите 0 для Logitech G920, оставьте 1 для всех остальных</alternative></data>
+  <data name="Controls_DegressLabel" xml:space="preserve">
+    <value>Градусы</value>
+  </data>
+  <data name="Controls_EffectsHeader" xml:space="preserve">
+    <value>Эффекты:</value>
+  </data>
+  <data name="Controls_EnhancedUndersteer" xml:space="preserve">
+    <value>Усиление эффекта недостаточной поворачиваемости</value>
+  </data>
+  <data name="Controls_ExperimentalHeader" xml:space="preserve">
+    <value>Эксперементальные</value>
+  </data>
+  <data name="Controls_Gain" xml:space="preserve">
+    <value>Усиление</value>
+  </data>
+  <data name="Controls_GyroscopicEffect" xml:space="preserve">
+    <value>Гироскопический эффект</value>
+  </data>
+  <data name="Controls_KerbEffect" xml:space="preserve">
+    <value>Эффект бордюров</value>
+  <alternative>Эффект бордюра</alternative></data>
+  <data name="Controls_KeyboardButton" xml:space="preserve">
+    <value>Кнопка на клавиатуре</value>
+  </data>
+  <data name="Controls_LoadPresetWarning" xml:space="preserve">
+    <value>Загрузить "{0}"? Текущие значения будут заменены (но позже могут быть восстановлены из корзины).</value>
+  </data>
+  <data name="Controls_MinimumForce" xml:space="preserve">
+    <value>Минимальное усилие</value>
+  </data>
+  <data name="Controls_MiscellaneousHeader" xml:space="preserve">
+    <value>Разное:</value>
+  </data>
+  <data name="Controls_RoadEffect" xml:space="preserve">
+    <value>Эффект дороги</value>
+  </data>
+  <data name="Controls_SkipFfbSteps_Tooltip" xml:space="preserve">
+    <value>Физический движок пропускает шаги, чтобы согласовать рули с маленьким входным буфером FF; если у вас возникли проблемы с CPU, увеличение значения до 2-4 может помочь</value>
+  </data>
+  <data name="Controls_SkipFfbSteps" xml:space="preserve">
+    <value>Пропускать шаги FFB</value>
+  </data>
+  <data name="Controls_SlipEffect" xml:space="preserve">
+    <value>Эффект скольжения</value>
+  </data>
+  <data name="Controls_SoftLock" xml:space="preserve">
+    <value>Программная блокировка</value>
+  </data>
+  <data name="Controls_SpeedSensitivity" xml:space="preserve">
+    <value>Чувств. к скорости</value>
+  <alternative>Чувствительность к скорости</alternative></data>
+  <data name="Controls_UnlockExperimental" xml:space="preserve">
+    <value>Разблокировать экспериментальные опции (будьте осторожны!)</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadowsSize_EncryptedDataMessage" xml:space="preserve">
+    <value>Размер тени будет сохранен в “data/ambient_shadows.ini”, но данные зашифрованы, и это действие ни к чему не приведет. Продолжить?</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadowsSize_EncryptedData" xml:space="preserve">
+    <value>Данные зашифрованы</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_Reloading" xml:space="preserve">
+    <value>Перезагружаем текстуры...</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_Updating" xml:space="preserve">
+    <value>Обновляем тени...</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadowsSizeHeader" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="AcObject_Fuel" xml:space="preserve">
+    <value>Топливо</value>
+  </data>
+  <data name="AcObject_TyresLabel" xml:space="preserve">
+    <value>Шины:</value>
+  </data>
+  <data name="Common_Cancelled" xml:space="preserve">
+    <value>Отменено</value>
+  </data>
+  <data name="Common_Finished" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Common_Waiting" xml:space="preserve">
+    <value>Ожидание...</value>
+  </data>
+  <data name="Online_DriversOnlineLabel" xml:space="preserve">
+    <value>Водителей в сети:</value>
+  <alternative>Гонщиков онлайн:</alternative></data>
+  <data name="Online_TrackIsMissingLabel" xml:space="preserve">
+    <value>Трасса не найдена:</value>
+  <alternative>Трек не найден:</alternative></data>
+  <data name="Online_CarIsMissingLabel" xml:space="preserve">
+    <value>Машина не найдена:</value>
+  <alternative>Автомобиль не найден:</alternative></data>
+  <data name="Common_ResetToRecommendedValue" xml:space="preserve">
+    <value>Вернуть рекомендуемые значения</value>
+  </data>
+  <data name="Common_RecommendedPercentageFormat" xml:space="preserve">
+    <value>Рекомендуемое значение: {0}%</value>
+  </data>
+  <data name="Common_Uploading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="FindInformation_SaveAsDescription" xml:space="preserve">
+    <value>Сохранить как Описание</value>
+  </data>
+  <data name="FindInformation_SaveAsCountry" xml:space="preserve">
+    <value>Сохранить как Страну</value>
+  </data>
+  <data name="FindInformation_SaveAsYear" xml:space="preserve">
+    <value>Сохранить как Год</value>
+  </data>
+  <data name="FindInformation_SaveAndClose" xml:space="preserve">
+    <value>Сохранить и закрыть</value>
+  </data>
+  <data name="FindInformation_Description" xml:space="preserve">
+    <value>Выберите год или описание и нажмите ОК; зажмите Ctrl, чтобы расширить описание вместо его замены.</value>
+  </data>
+  <data name="AcObject_CannotUpdatePreview" xml:space="preserve">
+    <value>Невозможно обновить пред. просмотр</value>
+  <alternative>Невозможно обновить превью</alternative></data>
+  <data name="AcObject_CannotUpdatePreview_TrackCommentary" xml:space="preserve">
+    <value>Вы должны сделать как минимум один снимок экрана.</value>
+  <alternative>Вы должны сделать как минимум один скриншот.</alternative></data>
+  <data name="Common_PointsPostfix" xml:space="preserve">
+    <value> точка</value>
+  </data>
+  <data name="Theme_Black" xml:space="preserve">
+    <value>Черный</value>
+  </data>
+  <data name="Common_Unsaved" xml:space="preserve">
+    <value>Не сохранено</value>
+  </data>
+  <data name="Plugins_NotAvailable" xml:space="preserve">
+    <value>Недоступно, требуемая версия приложения {0}.</value>
+  </data>
+  <data name="Plugins_DownloadAndInstall" xml:space="preserve">
+    <value>Скачать и установить ({0})</value>
+  </data>
+  <data name="Toolbar_CreateJson_Tooltip" xml:space="preserve">
+    <value>Создать новый файл ui_skin.json (Alt+S)</value>
+  </data>
+  <data name="AcObject_YearLabel_CarTooltip" xml:space="preserve">
+    <value>Год начала производства</value>
+  </data>
+  <data name="Toolbar_DeleteJson_Tooltip" xml:space="preserve">
+    <value>Отправить ui_skin.json в Корзину (Alt+Delete)</value>
+  </data>
+  <data name="CustomShowroom_ShaderProperties" xml:space="preserve">
+    <value>Параметры шейдера:</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_CannotUpdate" xml:space="preserve">
+    <value>Невозможно обновить окружающие тени</value>
+  </data>
+  <data name="Online_JoinUsing" xml:space="preserve">
+    <value>Присоединиться с {0}</value>
+  </data>
+  <data name="Controls_ClearKeyboardBinding" xml:space="preserve">
+    <value>Очистить привязку клавиатуры</value>
+  </data>
+  <data name="Controls_ClearWheelBinding" xml:space="preserve">
+    <value>Очистить привязку руля</value>
+  </data>
+  <data name="Controls_DamperGain" xml:space="preserve">
+    <value>Усиление демпфера</value>
+  </data>
+  <data name="Controls_MinumumDamperLevel" xml:space="preserve">
+    <value>Мин. уровень демпфера</value>
+  </data>
+  <data name="QuickSwitches_HideDriver" xml:space="preserve">
+    <value>Скрыть водителя</value>
+  <alternative>Без водителя</alternative></data>
+  <data name="QuickSwitches_HideDriver_Tooltip" xml:space="preserve">
+    <value>Скрыть модель водителя</value>
+  </data>
+  <data name="Share_EnterName" xml:space="preserve">
+    <value>Введите имя или оставьте поле пустым:</value>
+  </data>
+  <data name="Share_EnterCustomId" xml:space="preserve">
+    <value>Введите пользовательский идентификатор:</value>
+  </data>
+  <data name="Share_EnterCustomIdHeader" xml:space="preserve">
+    <value>Пользовательский идентификатор:</value>
+  </data>
+  <data name="Share_VerifyMessage" xml:space="preserve">
+    <value>Имя автора: [b]{0}[/ b]
+Название записи: [b]{1}[/ b]
+Тип записи: [b]{2}[/ b]</value>
+  </data>
+  <data name="Share_VerifyMessageHeader" xml:space="preserve">
+    <value>Все нормально?</value>
+  </data>
+  <data name="Share_InProgress" xml:space="preserve">
+    <value>Обмен...</value>
+  </data>
+  <data name="Share_CannotShare" xml:space="preserve">
+    <value>Не удается передать {0}</value>
+  </data>
+  <data name="Share_SharedMessage" xml:space="preserve">
+    <value>Ссылка скопирована в буфер обмена</value>
+  </data>
+  <data name="Share_SharedMessageAlternative" xml:space="preserve">
+    <value>Нажмите, чтобы открыть ссылку</value>
+  </data>
+  <data name="Showroom_ShowroomLabel" xml:space="preserve">
+    <value>Шоурум:</value>
+  <alternative>Выставочный зал:</alternative></data>
+  <data name="Showroom_HideWatermark_Tooltip" xml:space="preserve">
+    <value>Водяной знак Kunos будет временно скрыт</value>
+  </data>
+  <data name="Showroom_HideWatermark" xml:space="preserve">
+    <value>Скрыть водяной знак</value>
+  </data>
+  <data name="Showroom_DisableSweetFx" xml:space="preserve">
+    <value>Выключить SweetFX</value>
+  </data>
+  <data name="Showroom_DisableSweetFx_Tooltip" xml:space="preserve">
+    <value>Очевидно, SweetFX не влияет на результат, но может уменьшить время загрузки</value>
+  </data>
+  <data name="Showroom_CannotStart" xml:space="preserve">
+    <value>Не удается запустить шоурум</value>
+  <alternative>Не удается запустить демонстрационный зал</alternative><alternative>Не удается запустить выставочный зал</alternative></data>
+  <data name="ImageViewer_CannotSave" xml:space="preserve">
+    <value>Не удалось сохранить изображение</value>
+  </data>
+  <data name="VideoViewer_CannotPlay_Commentary" xml:space="preserve">
+    <value>Убедитесь, что VLC плагин установлен правильно.</value>
+  <alternative>Убедитесь, что дополнение VLC установлено правильно.</alternative></data>
+  <data name="CustomShowroom_TextureIsMissing" xml:space="preserve">
+    <value>Текстура отсутствует!</value>
+  </data>
+  <data name="CustomShowroom_TextureTypeLabel" xml:space="preserve">
+    <value>Тип:</value>
+  </data>
+  <data name="CustomShowroom_TextureFormatLabel" xml:space="preserve">
+    <value>Формат:</value>
+  </data>
+  <data name="CustomShowroom_TextureDimensionsLabel" xml:space="preserve">
+    <value>Размеры:</value>
+  </data>
+  <data name="CustomShowroom_Export" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_2048" xml:space="preserve">
+    <value>Просмотр в 2048×2048</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_512" xml:space="preserve">
+    <value>Просмотр в 512×512</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_1024" xml:space="preserve">
+    <value>Просмотр в 1024×1024</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_4096" xml:space="preserve">
+    <value>Просмотр в 4096×4096</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_Custom" xml:space="preserve">
+    <value>Просмотр в пользовательском разрешении</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_Prompt" xml:space="preserve">
+    <value>Размеры ([Ширина] × [Высота]):</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_ParsingFailed" xml:space="preserve">
+    <value>Не удается определить размеры</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_ParsingFailed_Commentary" xml:space="preserve">
+    <value>Пожалуйста, используйте для них правильный формат.</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping_Export" xml:space="preserve">
+    <value>Экспорт текстур</value>
+  </data>
+  <data name="CustomShowroom_CannotExport" xml:space="preserve">
+    <value>Не удается экспортировать текстуру</value>
+  </data>
+  <data name="CustomShowroom_Loading" xml:space="preserve">
+    <value>Загрузка модели ...</value>
+  </data>
+  <data name="CustomShowroom_CannotStart" xml:space="preserve">
+    <value>Не удается запустить пользовательский шоурум</value>
+  <alternative>Не удается запустить пользовательский демонстрационный зал</alternative><alternative>Не удается запустить пользовательский выставочный зал</alternative></data>
+  <data name="CustomShowroom_Tools_Title" xml:space="preserve">
+    <value>Инструменты</value>
+  </data>
+  <data name="CustomShowroom_SelectedHeader" xml:space="preserve">
+    <value>Выбранные</value>
+  </data>
+  <data name="CustomShowroom_Selected_MaterialLabel" xml:space="preserve">
+    <value>Материалы:</value>
+  </data>
+  <data name="CustomShowroom_Selected_TexturesLabel" xml:space="preserve">
+    <value>Текстуры:</value>
+  </data>
+  <data name="CustomShowroom_Stats_TrianglesLabel" xml:space="preserve">
+    <value>Треугольники:</value>
+  </data>
+  <data name="CustomShowroom_StatsHeader" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="CustomShowroom_Stats_ObjectsLabel" xml:space="preserve">
+    <value>Объекты:</value>
+  </data>
+  <data name="CustomShowroom_ControlHeader" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="CustomShowroom_SkinHeader" xml:space="preserve">
+    <value>Раскраска</value>
+  </data>
+  <data name="CustomShowroom_EditingMode" xml:space="preserve">
+    <value>Режим редактирования раскрасок</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_Reset" xml:space="preserve">
+    <value>Сбросить до рекомендуемых значений</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_Brightness" xml:space="preserve">
+    <value>Яркость</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_HideWheels" xml:space="preserve">
+    <value>Скрыть руль</value>
+  <alternative>Скрыть колеса</alternative></data>
+  <data name="TableHeader_BestLap" xml:space="preserve">
+    <value>Лучший круг</value>
+  </data>
+  <data name="Share_Shared" xml:space="preserve">
+    <value>{0} Передано</value>
+  </data>
+  <data name="CustomShowroom_EditingMode_Tooltip" xml:space="preserve">
+    <value>Используйте PSD, XCF и т. д., Если существует (требуется аддон Magick.NET)</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_Update" xml:space="preserve">
+    <value>Обновить окружающие тени</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadowsHeader" xml:space="preserve">
+    <value>Окружающая тень</value>
+  </data>
+  <data name="CustomShowroom_ObjectInformation" xml:space="preserve">
+    <value>Имя объекта: [b]{0}[/b]
+Класс: [b]{1}[/b]
+
+Активный: [b]{2}[/b]
+Визуализируемых: [b]{3}[/b]
+Видимый: [b]{4}[/b]
+
+Прозрачный: [b]{5}[/b]
+Подбор теней: [b]{6}[/b]
+
+Слой: [b]{7}[/b]
+LOD в: [b]{8}[/b]
+LOD в: [b]{9}[/b]
+
+Материал: [b]{10}[/b]</value>
+  </data>
+  <data name="CustomShowroom_MaterialInformation" xml:space="preserve">
+    <value>Имя материала: [b]{0}[/b]
+Шейдер: [b]{1}[/b]
+
+Режим смешивания: [b]{2}[/b]
+Альфа-тест: [b]{3}[/b]
+Режим глубины: [b]{4}[/b]</value>
+  </data>
+  <data name="CarParent_MakeIndependent" xml:space="preserve">
+    <value>Сделать независимым</value>
+  </data>
+  <data name="Plugins_Update" xml:space="preserve">
+    <value>Обновить (Новая версия: {0})</value>
+  </data>
+  <data name="Common_RoundPostfix" xml:space="preserve">
+    <value> круг</value>
+  </data>
+  <data name="TableHeader_Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="TableHeader_Car" xml:space="preserve">
+    <value>Машина</value>
+  </data>
+  <data name="TableHeader_Track" xml:space="preserve">
+    <value>Трасса</value>
+  </data>
+  <data name="TableHeader_Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="TableHeader_CarSkin" xml:space="preserve">
+    <value>Раскраска</value>
+  </data>
+  <data name="TableHeader_Nationality" xml:space="preserve">
+    <value>Национальность</value>
+  </data>
+  <data name="TableHeader_Visible" xml:space="preserve">
+    <value>Видимый</value>
+  </data>
+  <data name="TableHeader_Locked" xml:space="preserve">
+    <value>Закрытый</value>
+  </data>
+  <data name="Common_FahrenheitPostfix" xml:space="preserve">
+    <value> °F</value>
+  </data>
+  <data name="TableHeader_Ai" xml:space="preserve">
+    <value>ИИ</value>
+  </data>
+  <data name="CustomShowroom_ViewMapping" xml:space="preserve">
+    <value>Обзор карты</value>
+  </data>
+  <data name="CustomShowroom_Control_Lights" xml:space="preserve">
+    <value>Свет</value>
+  </data>
+  <data name="CustomShowroom_Control_Wireframe" xml:space="preserve">
+    <value>Каркас</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_Diffusion" xml:space="preserve">
+    <value> рассеивание</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_Iterations" xml:space="preserve">
+    <value>Повтор</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadows_FadeToEdges" xml:space="preserve">
+    <value>Размытие по краям</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadowsSize_Fit" xml:space="preserve">
+    <value>Подогнать</value>
+  </data>
+  <data name="CustomShowroom_AmbientShadowsSize_Highlight" xml:space="preserve">
+    <value>Выделите размер</value>
+  </data>
+  <data name="AcObject_CarParentLabel_Tooltip" xml:space="preserve">
+    <value>Родительский автомобиль (если он установлен, этот автомобиль будет его настроенной версией)</value>
+  </data>
+  <data name="Controls_DegreesLabel" xml:space="preserve">
+    <value>Градусы</value>
+  </data>
+  <data name="Common_ScrollToSelected" xml:space="preserve">
+    <value>Перейти к выбранному (Ctrl+Shift+V)</value>
+  </data>
+  <data name="Common_WhatIsIt" xml:space="preserve">
+    <value>Что это?</value>
+  </data>
+  <data name="Common_Rating" xml:space="preserve">
+    <value>Рейтинг:</value>
+  </data>
+  <data name="CarParent_ChildrenWillBeMoved" xml:space="preserve">
+    <value>Дети переедут к новым родителям!</value>
+  </data>
+  <data name="Common_PsiPostfix" xml:space="preserve">
+    <value>psi</value>
+  </data>
+</root>
