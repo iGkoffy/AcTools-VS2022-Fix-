@@ -63,20 +63,20 @@
     <Reference Include="AcManager.Internal">
       <HintPath>..\Libraries\AcManager.Internal\AcManager.Internal.dll</HintPath>
     </Reference>
-    <Reference Include="CefSharp, Version=114.2.120.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
-      <HintPath>..\Libraries\CefSharp-114.2.120-$(ActualPlatform)\CefSharp.dll</HintPath>
+    <Reference Include="CefSharp, Version=91.1.211.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
+      <HintPath>..\Libraries\CefSharp-91.1.211-$(ActualPlatform)\CefSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="CefSharp.Core, Version=114.2.120.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
-      <HintPath>..\Libraries\CefSharp-114.2.120-$(ActualPlatform)\CefSharp.Core.dll</HintPath>
+    <Reference Include="CefSharp.Core, Version=91.1.211.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
+      <HintPath>..\Libraries\CefSharp-91.1.211-$(ActualPlatform)\CefSharp.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="CefSharp.Wpf, Version=114.2.120.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
-      <HintPath>..\Libraries\CefSharp-114.2.120-$(ActualPlatform)\CefSharp.Wpf.dll</HintPath>
+    <Reference Include="CefSharp.Wpf, Version=91.1.211.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
+      <HintPath>..\Libraries\CefSharp-91.1.211-$(ActualPlatform)\CefSharp.Wpf.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="CefSharp.WinForms, Version=114.2.120.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
-      <HintPath>..\Libraries\CefSharp-114.2.120-$(ActualPlatform)\CefSharp.WinForms.dll</HintPath>
+    <Reference Include="CefSharp.WinForms, Version=91.1.211.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
+      <HintPath>..\Libraries\CefSharp-91.1.211-$(ActualPlatform)\CefSharp.WinForms.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="JetBrains.Annotations, Version=11.1.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325">
@@ -107,10 +107,7 @@
       <HintPath>..\packages\AvalonEdit.5.0.3\lib\Net40\ICSharpCode.AvalonEdit.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MoonSharp.Interpreter">
-      <HintPath>..\packages\MoonSharp.1.6.0.0\lib\net40-client\MoonSharp.Interpreter.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+
     <Reference Include="MoonSharp.Interpreter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=921e73ce94aa17f8">
       <HintPath>..\packages\MoonSharp.2.0.0.0\lib\net40-client\MoonSharp.Interpreter.dll</HintPath>
     </Reference>

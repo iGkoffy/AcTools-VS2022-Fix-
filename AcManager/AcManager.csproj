@@ -169,8 +169,8 @@
       <Private>True</Private>
       <EmbedInteropTypes>false</EmbedInteropTypes>
     </Reference>
-    <Reference Include="CefSharp, Version=114.2.120.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
-      <HintPath>..\Libraries\CefSharp-114.2.120-$(ActualPlatform)\CefSharp.dll</HintPath>
+    <Reference Include="CefSharp, Version=91.1.211.0, Culture=neutral, processorArchitecture=$(ActualPlatform)">
+      <HintPath>..\Libraries\CefSharp-91.1.211-$(ActualPlatform)\CefSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="xxHashSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -212,9 +212,9 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="TimeZoneConverter, Version=2.4.1.0, Culture=neutral, PublicKeyToken=null">
+    <!-- <Reference Include="TimeZoneConverter, Version=2.4.1.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\TimeZoneConverter.2.4.1\lib\net45\TimeZoneConverter.dll</HintPath>
-    </Reference>
+    </Reference> -->
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

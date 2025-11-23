@@ -84,6 +84,10 @@ namespace AcManager.Tools.Miscellaneous {
         }
 
         public override Task CheckAndUpdateIfNeeded() {
+            // Auto-update disabled by user request
+            IsSupported = false;
+            return Task.Delay(0);
+/*
 #if !FORCE_UPDATE
             if (!MainExecutingFile.IsPacked) {
                 LatestError = ToolsStrings.AppUpdater_UnpackedVersionMessage;
@@ -99,6 +103,7 @@ namespace AcManager.Tools.Miscellaneous {
 #endif
 
             return base.CheckAndUpdateIfNeeded();
+*/
         }
 
         protected override async Task<bool> CheckAndUpdateIfNeededInner() {

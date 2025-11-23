@@ -180,6 +180,19 @@ namespace AcManager.Controls.UserControls.Cef {
             return true;
         }
 
+        bool IRequestHandler.OnQuotaRequest(IWebBrowser chromiumWebBrowser, IBrowser browser, string originUrl, long newSize, IRequestCallback callback) {
+            if (!callback.IsDisposed) {
+                using (callback) {
+                    callback.Continue(true);
+                }
+            }
+            return true;
+        }
+
+        void IRequestHandler.OnPluginCrashed(IWebBrowser chromiumWebBrowser, IBrowser browser, string originUrl) {
+            Logging.Warning(originUrl);
+        }
+
         void IDisposable.Dispose() { }
     }
 }

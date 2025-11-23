@@ -1,3 +1,23 @@
+# AcTools (VS2022 Fix)
+
+Fork of Content Manager (AcTools) patched to build with Visual Studio 2022, with updated dependencies and CefSharp fixes.
+
+This repository is a fork of the original **[AcTools](https://github.com/gro-ove/actools)** project.
+All credits belong to the original author, **[gro-ove](https://github.com/gro-ove)**.
+
+**Original Repository:** [https://github.com/gro-ove/actools](https://github.com/gro-ove/actools)
+
+## Modifications in this Fork
+
+This fork includes fixes to allow the project to build successfully in a modern environment (VS 2022):
+- **Build Configuration**: Updated the solution and project files to resolve dependency issues and compilation errors.
+- **CefSharp Compatibility**: Fixed CefSharp versioning references in `AcManager.csproj`.
+- **Dependencies**: Corrected and restored missing project references to enable successful compilation.
+
+
+
+---
+
 # AcTools (and Content Manager)
 
 [![Build status](https://img.shields.io/appveyor/ci/gro-ove/actools.svg?label=Build&maxAge=60)](https://ci.appveyor.com/project/gro-ove/actools)
