@@ -13,6 +13,7 @@ This fork includes fixes to allow the project to build successfully in a modern 
 - **Build Configuration**: Updated the solution and project files to resolve dependency issues and compilation errors.
 - **CefSharp Compatibility**: Fixed CefSharp versioning references in `AcManager.csproj`.
 - **Dependencies**: Corrected and restored missing project references to enable successful compilation.
+- **Updates Disabled**: Automatic updates have been temporarily disabled.
 
 
 
